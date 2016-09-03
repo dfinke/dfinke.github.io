@@ -313,11 +313,11 @@ article h2, article h3, article h4
    font-size: 0.8em;
 }*/
 
-article h1 span.prompt::after {
+/*article h1 span.prompt::after {
    content: '"';
    color: #f92672;
    font-size: 0.8em;
-}
+}*/
 
 .blinker {
   -webkit-animation-name: blinker;
