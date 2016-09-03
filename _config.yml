@@ -5,7 +5,7 @@ url: 'https://dfinke.github.io'
 baseurl: '/'
 
 google_analytics: 'UA-82828808-1'
-disqus_shortname: 'xainey'
+# disqus_shortname: 'xainey'
 
 author:
   name: 'Doug Finke'
