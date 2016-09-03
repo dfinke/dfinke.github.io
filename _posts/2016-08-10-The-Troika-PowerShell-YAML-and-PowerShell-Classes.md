@@ -24,12 +24,14 @@ receipt: Purchase Invoice
 date:    2016-08-06
 "@ | ConvertFrom-Yaml
 ```
+
 **Prints**
 ```powershell
 receipt          date
 -------          ----
 Purchase Invoice 2016-08-06
 ```
+
 ## Arrays
 Now add an `items` property that creates an array. Use **-** to create a collection of ordered value.
 
@@ -82,7 +84,6 @@ Now, what happens if you use these structures in your PowerShell scripts and som
 Let's introduce the `Data` class, cast `$r` to it, and print out the `Purchaser.Age`.
 
 This buys us some intellisense when we type `([Data]$r).` but we want some more saftey.
-
 
 ```powershell
 class Data {
