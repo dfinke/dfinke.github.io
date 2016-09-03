@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The  Troika :  PowerShell,  YAML and PowerShell Classes"
+title:  "The  Troika -  PowerShell,  YAML and PowerShell Classes"
 date:   2016-08-10 15:19
 comments: true
 description: The  Troika :  PowerShell,  YAML and PowerShell ClassesAnnouncements.
