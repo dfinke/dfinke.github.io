@@ -76,7 +76,7 @@ Purchaser :
 
 **Prints**
 
-```
+```powershell
 Name Age
 ---- ---
 John 10
@@ -100,9 +100,10 @@ Purchaser :
 
 PowerShell handles checking the type and reporting a very useful error.
 
-```
-Cannot convert value "@{Purchaser=System.Object[]}" to type "Data". Error: "Cannot create object of type "Purchaser". Cannot convert
-value "abc" to type "System.Int32". Error: "Input string was not in a correct format.""
+```powershell
+Cannot convert value "@{Purchaser=System.Object[]}" to type "Data". 
+Error: "Cannot create object of type "Purchaser". 
+Cannot convert value "abc" to type "System.Int32". Error: "Input string was not in a correct format.""
 ```
 
 ## Doing Defaults
