@@ -6,10 +6,10 @@ comments: true
 description: The  Troika :  PowerShell,  YAML and PowerShell ClassesAnnouncements.
 categories: 
     - PowerShell
-    - YAML
-    - PowerShell Classes
 tags: 
     - PowerShell
+    - YAML
+    - PowerShell Classes
 ---
 
 **YAML Ain't Markup Language**, its purpose is a data-oriented, rather than document markup. Combining this with PowerShell is potent, adding PowerShell classes, well its like adding bacon bits to bacon and eggs.
