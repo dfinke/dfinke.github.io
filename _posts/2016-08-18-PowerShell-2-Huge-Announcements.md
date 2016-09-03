@@ -28,7 +28,7 @@ Running on Windows 10, in Hyper-V on Ubuntu 16.04 Desktop.
 * Launching Visual Studio Code
 * Finally, calling `python` code inline in a `PowerShell` script
 
-![](https://github.com/dfinke/GifCam/blob/master/stuff/animation.gif?raw=true)
+![](../images/posts/animation.gif)
 
 
 ## Wait there's more
