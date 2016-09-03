@@ -43,7 +43,8 @@ Purchaser :
 ```
 
 **Prints**
-```powershell
+
+```
 Name Age
 ---- ---
 John 10
