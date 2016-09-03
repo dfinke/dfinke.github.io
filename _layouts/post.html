@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ page.date | date: "%-d %b %Y" }}" class="post-meta__date date">
+        Posted on {{ page.date | date: "%-d %b %Y" }}.
+        {% if page.modified %} Last updated {{ page.modified | date: "%-d %b %Y" }}.{% endif %}
+      </time> &#8226; 
+      <span class="post-meta__tags">Tags:
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> 
+        {% endfor %}
+      </span>
+    </div>
+    <h1 class="post-title"><span class="prompt">{{ page.title }}</span><span class="blinker"></span></h1>
+  </header>
+
+  <section class="post">
+    {{ content }}
+  </section>
+  {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+</article>
+{% if page.comments != false %}{% include disqus.html %}{% endif %}

@@ -1,0 +1,50 @@
+# Site settings
+title: Development In A Blink
+description: "Researching the optimal; Implementing the pracitcal"
+url: 'https://dfinke.github.io'
+baseurl: '/'
+
+google_analytics: 'UA-82828808-1'
+disqus_shortname: 'xainey'
+
+author:
+  name: 'Doug Finke'
+  github_username:  dfinke
+  twitter_username: dfinke
+  email: finked@hotmail.com
+  
+#  linkedin_username:
+#  facebook_username:
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+gems: ['jekyll-paginate', 'jemoji', 'jekyll-sitemap', 'jekyll-gist']
+
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
