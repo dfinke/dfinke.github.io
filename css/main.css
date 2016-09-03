@@ -307,11 +307,11 @@ article h2, article h3, article h4
  * Blinker/Post title
  */
 
-article h1 span.prompt::before {
+/*article h1 span.prompt::before {
    content: '$ echo "';
    color: #f92672;
    font-size: 0.8em;
-}
+}*/
 
 article h1 span.prompt::after {
    content: '"';
