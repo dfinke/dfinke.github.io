@@ -460,7 +460,7 @@ article p img
 
 .post-list__post-title::before
 {
-   content: 'PS C:\> ';
+   content: 'PS C::\> ';
    color: #f92672;
    font-size: 0.6em;
 }
