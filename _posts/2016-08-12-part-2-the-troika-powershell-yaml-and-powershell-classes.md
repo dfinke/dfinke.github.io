@@ -75,7 +75,8 @@ Purchaser :
 ```
 
 **Prints**
-```powershell
+
+```
 Name Age
 ---- ---
 John 10
@@ -132,7 +133,8 @@ Purchaser :
 ```
 
 **Prints**
-```powershell
+
+```
 Name Age DateCreated
 ---- --- -----------
 John  10 8/12/2016
