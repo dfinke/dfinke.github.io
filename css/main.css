@@ -455,7 +455,7 @@ article p img
 .post-list__post-title
 { 
     content: ' ';
-    font-size: 2em;
+    font-size: 1em;
     font-family: "Roboto Slab", serif;
 }
 
