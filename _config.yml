@@ -1,6 +1,8 @@
 # Site settings
 title: Development In A Blink
-description: "<center>Researching the optimal; Implementing the practical</center>"
+description: "<center>Researching the optimal; Implementing the practical</center></br>
+<center>Author of <a href='https://www.amazon.com/Windows-PowerShell-Developers-Douglas-Finke/dp/1449322700/ref=sr_1_1?ie=UTF8&qid=1472992144&sr=8-1&keywords=douglas+finke'>'PowerShell for Developers'</a></center>
+"
 url: 'https://dfinke.github.io'
 baseurl: '/'
 
