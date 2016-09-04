@@ -14,7 +14,7 @@ tags:
 
 * In [Part 1](https://dfinke.github.io/2016/The-Troika-PowerShell-YAML-and-PowerShell-Classes/), we took YAML, converted it to PowerShell objects and then used PowerShell v5.0 to cast it to a class. This gave us runtime checking to see if we fat fingered entries in the YAML. This required very little coding, just some simple scaffold setup.
 
-* In [Part 2](http://dougfinke.com/blog/part-2-the-troika-powershell-yaml-and-powershell-classes/), we took it further, easily making the variables know if they integers or not (for example) and with no work on our part, report an error if the YAML we typed was wrong. Plus, we saw how we could supply default values for fields not specified in the YAML. Streamling the authoring of the YAML information.
+* In [Part 2](https://dfinke.github.io/2016/part-2-the-troika-powershell-yaml-and-powershell-classes/), we took it further, easily making the variables know if they integers or not (for example) and with no work on our part, report an error if the YAML we typed was wrong. Plus, we saw how we could supply default values for fields not specified in the YAML. Streamling the authoring of the YAML information.
 
 ## Checking for required data
 In Part 3 we'll take another step. We'll see how we can make data required in the YAML that has been authored. Sometimes we forget it cause we move quickly other times we don't specify because we don't know about. In PowerShell we use `[Parameter(Mandatory)]` on parameters in a function to make this happen for example.
