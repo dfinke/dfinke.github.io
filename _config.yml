@@ -6,7 +6,7 @@ description: "<center>Researching the optimal; Implementing the practical</cente
 url: 'https://dfinke.github.io'
 baseurl: '/'
 
-google_analytics: 'UA-82828808-1'
+#google_analytics: 'UA-82828808-1'
 # disqus_shortname: 'xainey'
 
 author:
@@ -14,8 +14,7 @@ author:
   github_username:  dfinke
   twitter_username: dfinke
   email: finked@hotmail.com
-  
-#  linkedin_username:
+  linkedin_username: douglasfinke
 #  facebook_username:
 
 defaults:
