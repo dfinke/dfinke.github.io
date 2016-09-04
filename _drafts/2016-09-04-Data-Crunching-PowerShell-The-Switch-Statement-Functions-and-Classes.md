@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Data Crunching - PowerShell, The Switch Statement, Functions and Classes"
+title:  "Data Crunching - Turning a data file into a PowerShell DSL"
 date:   2016-09-04 11:50
 comments: true
 description: "Data Crunching - PowerShell, The Switch Statement, Functions and Classes."
@@ -25,7 +25,7 @@ END
 ```
 
 ## Data Crunching in PowerShell
-Looking at the file, we'd want to pull it apart and put it into a structure we could work with. The first things that came to mind were to use the substring method, `-split`, or regular expressions. You'd need to handle the repeating whitespace, "split" the data into parts, and reform it into a data structure. This would all depend on which line of data was being processed.
+Looking at the file, we'd want to pull it apart and put it into a structure we could work with. The first things that came to mind were to use the substring method, `-split`, or regular expressions. You'd need to handle the repeating whitespace, "split" the data into parts, and reform it into a data structure. This would all depend on which line of data was being processed. Each "type" has specific number of meaningful components, and would need to be stored in variable.  
 
 ## The Light Bulb
 What I noticed is if I took the data line `AUTHOR      DAVE WOODCOCK  97 10 31` and dropped it in PowerShell and ran it, I'd get an error. If I create a function, Author and re-ran it I was getting somewhere.
