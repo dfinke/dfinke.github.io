@@ -12,7 +12,7 @@ tags:
     - PowerShell Classes
 ---
 
-In the last post [The  Troika :  PowerShell,  YAML and PowerShell Classes](http://dougfinke.com/blog/the-troika-powershell-yaml-and-powershell-classes/), we took YAML, converted it to PowerShell objects and then used PowerShell v5.0 to cast it to a class. This gave us runtime checking to see if we fat fingered entries in the YAML. This required very little coding, just some simple scaffold setup.
+In the last post [The  Troika :  PowerShell,  YAML and PowerShell Classes](https://dfinke.github.io/2016/The-Troika-PowerShell-YAML-and-PowerShell-Classes/), we took YAML, converted it to PowerShell objects and then used PowerShell v5.0 to cast it to a class. This gave us runtime checking to see if we fat fingered entries in the YAML. This required very little coding, just some simple scaffold setup.
 
 Once you do this, you're a couple of steps from even more capability.
 
