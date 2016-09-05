@@ -58,7 +58,7 @@ Day       31
 
 That was pretty painless, and I could apply the same pattern to the `COMPND` and `ATOM`. lines.
 
-But I still needed store the resulting data on a structure.
+But I still needed to store the resulting data in a structure.
 
 ## PowerShell Classes
 
