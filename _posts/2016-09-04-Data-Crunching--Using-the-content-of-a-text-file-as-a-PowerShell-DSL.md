@@ -44,7 +44,7 @@ function Author ($FirstName, $LastName, $Year, $Month, $Day) {
 }
 ```
 
-Now the above code prints this. So PowerShell's parameter binding too care of all the whitespace issues and mapped everything for us. Plus, it provided all the details in a nice neat package `$PSBoundParameters` 
+Now the above code prints this. So PowerShell's parameter binding took care of all the whitespace issues and mapped everything for us. Plus, it provided all the details in a nice neat package `$PSBoundParameters` 
 
 ```
 Key       Value   
