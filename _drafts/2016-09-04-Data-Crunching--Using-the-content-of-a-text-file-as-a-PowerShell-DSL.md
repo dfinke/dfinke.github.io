@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Data Crunching - Turning a data file into a PowerShell DSL"
+title:  "Data Crunching - Using the content of a text file as a PowerShell DSL"
 date:   2016-09-04 11:50
 comments: true
-description: "Data Crunching - PowerShell, The Switch Statement, Functions and Classes."
+description: "Data Crunching - Using the content of a text file as a PowerShell DSL."
 categories: 
     - PowerShell
 tags: 
@@ -25,13 +25,13 @@ END
 ```
 
 ## Data Crunching in PowerShell
-Looking at the file, we'd want to pull it apart and put it into a structure we could work with. The first things that came to mind were to use the substring method, `-split`, or regular expressions. You'd need to handle the repeating whitespace, "split" the data into parts, and reform it into a data structure. This would all depend on which line of data was being processed. Each "type" has specific number of meaningful components, and would need to be stored in variable.  
+Looking at the file, we'd want to pull it apart and put it into a structure we could work with. The first things that came to mind were to use the substring method, `-split`, and/or regular expressions. You'd need to handle the repeating whitespace, "split" the data into parts, and transform it into a data structure. This would all depend on which line of data was being processed. Each "type" has specific number of meaningful data attributes that need to be stored in variable.  
 
 ## The Light Bulb
-What I noticed is if I took the data line `AUTHOR      DAVE WOODCOCK  97 10 31` and dropped it in PowerShell and ran it, I'd get an error. If I create a function, Author and re-ran it I was getting somewhere.
+What I noticed is if I took the data line `AUTHOR      DAVE WOODCOCK  97 10 31` and dropped it in PowerShell and ran it, I'd get an error. If I create a function `Author` and re-ran it I was getting somewhere.
 
 ```PowerShell
-function author {}
+function Author {}
 
 AUTHOR      DAVE WOODCOCK  97 10 31
 ```
@@ -44,7 +44,7 @@ function Author ($FirstName, $LastName, $Year, $Month, $Day) {
 }
 ```
 
-Now the above code prints this. 
+Now the above code prints this. So PowerShell's parameter binding too care of all the whitespace issues and mapped everything for us. Plus, it provided all the details in a nice neat package `$PSBoundParameters` 
 
 ```
 Key       Value   
@@ -62,7 +62,7 @@ But I still needed store the resulting data on a structure.
 
 ## PowerShell Classes
 
-Here's the really cool part. Copy and paste the `function Author` line and change it a bit into a `PowerShell class`.
+Here's the really cool part. Copy and paste the `function Author (...)` line and tweak it a bit into a `PowerShell class`.
 
 ```powershell
 class Author {
@@ -83,7 +83,7 @@ function Author ($FirstName, $LastName, $Year, $Month, $Day) {
 ```
 
 ## Boom
-We've *parsed* a line from the PDB using PowerShell parameter binding and casting it to a class and got a PowerShell object with property names and data, without writing any code or parsing logic.
+We've *parsed* a line from the PDB using PowerShell parameter binding and casting it to a class and got a PowerShell object with property names and data, without writing any code to set variables or parsing logic.
 
 ```
 FirstName : DAVE
@@ -134,7 +134,7 @@ Get-Content -Raw .\ammonia.pdb | Invoke-Expression
 ```
 
 ## The Full Monty
-To make this work we'll leverage the fact that the PDB format a serializtion of data in a specific order. `COMPND` is the first function we'll find so we create the Compund class and for other function we convert it a and add it to the `Compound` object in `$targetCompund`. When the `TER` line/function is hit, we emit it to pipeline.
+To make this we'll make the assumption `COMPND` is the first function we'll find so we create the Compund class and for other function we convert it a and add it to the `Compound` object in `$targetCompund`. When the `TER` line/function is evaluated, we emit the object and it's data to the pipeline.
 
 Notice the datatypes are specified for the `Author` and `Atoms` properties. Also, the method `AddAtom` appends `Atom` data to the `$Atoms` property, used by the `Atom` function.  
 
@@ -206,3 +206,8 @@ sphere elementName idx     x y           z
      3 H             1 0.771 -0.727   0.89
      4 H             1 0.771 -0.727 -0.890
 ```
+
+## That's A Wrap
+Data crunching happens a lot and having approaches like these in your toolbox lets you get things done faster and more accurately. The less code you have to type, the fewer chances you have to make errors.
+
+Notice that the properties `x`, `y`, `z` don't align. Go back to the `Atom` class and type them as `[double]`, re-run and see what happens.   
