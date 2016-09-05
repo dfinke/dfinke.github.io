@@ -83,7 +83,7 @@ function Author ($FirstName, $LastName, $Year, $Month, $Day) {
 ```
 
 ## Boom
-We've *parsed* a line from the PDB using PowerShell parameter binding and casting it to a class and got a PowerShell object with property names and data, without writing any code to set variables or parsing logic.
+We've *parsed* a line from the PDB using PowerShell parameter binding and casting it to a class and got a PowerShell object with property names and data, without writing any code to set variables or call parsing logic.
 
 ```
 FirstName : DAVE
@@ -134,7 +134,7 @@ Get-Content -Raw .\ammonia.pdb | Invoke-Expression
 ```
 
 ## The Full Monty
-To make this we'll make the assumption `COMPND` is the first function we'll find so we create the Compund class and for other function we convert it a and add it to the `Compound` object in `$targetCompund`. When the `TER` line/function is evaluated, we emit the object and it's data to the pipeline.
+To make this happen we'll make the assumption `COMPND` is the first function we'll find so we create the Compund class and for other function we convert it a and add it to the `Compound` object in `$targetCompund`. When the `TER` line/function is evaluated, we emit the object and it's data to the pipeline.
 
 Notice the datatypes are specified for the `Author` and `Atoms` properties. Also, the method `AddAtom` appends `Atom` data to the `$Atoms` property, used by the `Atom` function.  
 
