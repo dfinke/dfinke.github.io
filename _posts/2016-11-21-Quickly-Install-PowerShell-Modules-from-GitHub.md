@@ -52,4 +52,4 @@ Another benefit is, private repos for companies doing PowerShell development. Yo
 On the PowerShell Gallery [Install-ModuleFromGitHub](https://www.powershellgallery.com/packages/InstallModuleFromGitHub/0.3).
 
 ## Thank you
-Thank you to [Damian Reeves](https://github.com/DamianReeves), his questions and suggestions typically lead to creating interesting ideas like ``Install-ModuleFromGitHub`. 
+Thank you to [Damian Reeves](https://github.com/DamianReeves), his questions and suggestions typically lead to creating interesting ideas like `Install-ModuleFromGitHub`. 
