@@ -16,4 +16,4 @@ To invoke commands, place your cursor in the Input bar at the top of the Window,
 
 Find out more at [Learn On Demand Systems](http://www.learnondemandsystems.com/powershell-containers-blogs/)
 
-<iframe src="https://containerdemo.learnondemandsystems.com/Lab/LaunchLab?containerImageId=sha256:02cb7f65d61b073a8b6b62ebdec43727bf2b14d5d5ce11e9cccfe583ba3bff92" width="600" height="300" frameborder="0"></iframe>
+<iframe src="https://containerdemo.learnondemandsystems.com/Lab/LaunchLab?containerImageId=sha256:93a9c37b36d03323f7b8fdd7f0302f7e487a0e8b31ccd8e689c40a404d2f1ea9" width="600" height="300" frameborder="0"></iframe>
