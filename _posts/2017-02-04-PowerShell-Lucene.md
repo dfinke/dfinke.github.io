@@ -28,7 +28,7 @@ Working from his example, in PowerShell I layered a `WPF` UI on top of the searc
 
 ![](https://github.com/dfinke/PoShLucene/blob/master/media/PoshLuceneNextPref.gif?raw=true)
 
-After the files are searxched and the index created, you can search for a word across all files. It's blazingly fast.
+After the files are searched and the index created, you can search for a word across all files. It's blazingly fast.
 
 Every file where the word is found, it is added to the list. You can click on the file names in the list and its contents are displayed below.
 
@@ -36,7 +36,7 @@ Every file where the word is found, it is added to the list. You can click on th
 
 ## Where to Get it?
 
-The PowerShell module is publish in the gallery, from a PowerShell console you can do `Install-Module -Name PoShLucene`. You can check it out here [PowerShell Gallery PoShLucene](https://www.powershellgallery.com/packages/PoShLucene/1.0).
+The PowerShell module is published in the gallery, from a PowerShell console you can do `Install-Module -Name PoShLucene`. You can check it out here [PowerShell Gallery PoShLucene](https://www.powershellgallery.com/packages/PoShLucene/1.0).
 
 The source for the PowerShell script is also on my [GitHub Repo](https://github.com/dfinke/PoShLucene).
 
