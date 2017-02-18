@@ -3,7 +3,7 @@ layout: post
 title:  "A Overlooked PowerShell Module For Generating Data"
 date:   2017-02-18 09:05
 comments: true
-description: "A Overlooked PowerShell Module For Generating Data"
+description: "An Overlooked PowerShell Module For Generating Data"
 categories: 
     - PowerShell
 tags: 
