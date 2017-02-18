@@ -11,7 +11,7 @@ tags:
 ---
 
 ## Introduction
-This is a two part series about the PowerShell NameIT module, published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/NameIT/1.8.0). Chris Hunt, co-contributor, has a companion post on hos blog [AutomatedOps](https://www.automatedops.com/blog/).
+This is a two part series about the PowerShell NameIT module, published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/NameIT/1.8.0). Chris Hunt, co-contributor, has a companion post on his blog [AutomatedOps](https://www.automatedops.com/blog/).
 
 I came across a GitHub repo where [Mitch Denny](https://github.com/mitchdenny/namerer) created a tool that is a simple tool to generate names and check them for availability. He wrote it in [TypeScript](https://www.typescriptlang.org/) and I was interested because of the template language he built to interact with the tool.
 
