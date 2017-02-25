@@ -49,7 +49,9 @@ New-AzureRmSqlDatabaseDataMaskingRule `
 
 # More Automation
 
-Using two PowerShell hashtables
+Using two PowerShell hashtables, `$sqlSvrParams` for the Azure information, and `$dataMasks` to target the tables and fields to be masked.
+
+This quicly masks 30 fields across several tables in an Azure SQL server in a particular Azure Resource Group.
 
 ```powershell
 $sqlSvrParams=@{
@@ -82,3 +84,11 @@ $dataMasks.GetEnumerator() |
         }
     }
 ```
+
+For the `MaskingFunction` parameter I went with `Default`. There are others `CreditCardNumber, Email, Number, Text, Default, NoMasking, SocialSecurityNumber` which make it very flexible.
+
+## Summary
+Dynamic Data Masking is viable solution for sensitive data. Coupled with PowerShell, you can quickly experiment with masking data in a variety of ways. Plus, with Powershell you can use `Get-AzureRmSqlDatabaseDataMaskingRule` and `Remove-AzureRmSqlDatabaseDataMaskingRule` to quickly figure out what masks are applied, and then remove them.
+
+## Bonus Points
+This approach *signinficantly* faster then removing data, making our process much more agile. Rather than running this task off hours once a day we now provide on demand delivery and it can be run multiples times in a day. 
