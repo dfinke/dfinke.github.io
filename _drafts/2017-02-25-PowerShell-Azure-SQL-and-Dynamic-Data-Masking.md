@@ -91,4 +91,6 @@ For the `MaskingFunction` parameter I went with `Default`. There are others `Cre
 Dynamic Data Masking is viable solution for sensitive data. Coupled with PowerShell, you can quickly experiment with masking data in a variety of ways. Plus, with Powershell you can use `Get-AzureRmSqlDatabaseDataMaskingRule` and `Remove-AzureRmSqlDatabaseDataMaskingRule` to quickly figure out what masks are applied, and then remove them.
 
 ## Bonus Points
-This approach *signinficantly* faster then removing data, making our process much more agile. Rather than running this task off hours once a day we now provide on demand delivery and it can be run multiples times in a day. 
+This approach *signinficantly* faster then removing data, making our process much more agile. Rather than running this task off hours once a day we now provide on demand delivery and it can be run multiples times in a day.
+
+Plus, we've seen no performance impact to the applications using the data with this approach. Now we can limit sensitve data using SQL logins and permissions.
