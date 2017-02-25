@@ -49,21 +49,23 @@ New-AzureRmSqlDatabaseDataMaskingRule `
 
 # More Automation
 
+Using two PowerShell hashtables
+
 ```powershell
-$p=@{
+$sqlSvrParams=@{
     ServerName        = "TargetServer"    
-    DatabaseName      = "doug-us-product"
-    ResourceGroupName = "Group-2"
+    DatabaseName      = "TargetDB"
+    ResourceGroupName = "Target-RG"
 }
 
 $dataMasks=@{
-    table1     = echo ip cash channelapikeysjson channelaccountmetadatajson
-    table2 = echo ip emailencrypted emailpwdencrypted usernameencrypted passwordencrypted
-    table3    = echo rateremail
-    table4     = echo requestsenderemail
-    table5 = echo ip appname fulfillmentapikeysjson fulfillmentaccountmetadatajson
-    table6 = echo shipfirstname shiplastname shipphone shipline1 shipline2 shipline3 packagesjson
-    table7      = echo shipfirstname shiplastname shipphone shipline1 shipline2 shipline3 buyeruserid buyeremail
+    table1 = echo ip field1 field2 field3
+    table2 = echo ip field1 field2 field3 field4
+    table3 = echo field1
+    table4 = echo field1
+    table5 = echo ip field1 field2 blobField1
+    table6 = echo field1 field2 field3 field4 field5 field6 field7
+    table7 = echo field1 field2 field3 field4 field5 field6 field7 field8
     table8 = echo email
 }
 
@@ -72,7 +74,7 @@ $dataMasks.GetEnumerator() |
         $tableName = $_.Key
         
         foreach ($columnName in $_.Value) {
-            New-AzureRmSqlDatabaseDataMaskingRule @p `
+            New-AzureRmSqlDatabaseDataMaskingRule @sqlSvrParams `
                 -SchemaName "dbo" `
                 -MaskingFunction Default `
                 -TableName $tableName `
