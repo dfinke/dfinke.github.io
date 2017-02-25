@@ -12,7 +12,7 @@ tags:
 
 We have large SQL tables, and contractors work for us which require them to have access to the data. The data is sensitive. One approach taken was to duplicate the tables and remove contents of the sensitive fields. This approach is time consuming, so it runs a schedule off hours. Not very agile.
 
-A colleague, Gaspare Bonventre, came across [Dynamic Data Masking](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-dynamic-data-masking-get-started).
+My colleague, Gaspare Bonventre, came across [Dynamic Data Masking](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-dynamic-data-masking-get-started).
 
 > SQL Database dynamic data masking limits sensitive data exposure by masking it to non-privileged users.
 
