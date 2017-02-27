@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "PowerShell, Azure SQL and Dynamic Data Masking"
-date:   2017-02-25 09:56:00
+date:   2017-02-27 09:00:00
 comments: true
 description: "PowerShell, Azure SQL and Dynamic Data Masking"
 categories: 
