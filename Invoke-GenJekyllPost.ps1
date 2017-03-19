@@ -1,7 +1,9 @@
 function Invoke-GenJekyllPost {
     param(
         $title,
-        $tag
+        $tag,
+        [ValidateSet('draft','post')]
+        $postType="draft"
     )
 
     $tags=@('PowerShell')
