@@ -57,7 +57,7 @@ One test passed, and two failed. In eight lines of PowerShell there are already 
 Now, many reading this might quip, just use `Measure-Object`. I will and to note, what if I needed to build this because I wanted to generate a file showing the comparisons done. Or, wanted to boost the performance?
 
 ## Sanity Check
-As a "sanity" check, replace the logic with `Measure-Object`, and re-run the tests.
+As a "sanity" check, replace the logic in the `Get-LargestNumber` function with `Measure-Object`, and re-run the tests.
 
 ```powershell
 function Get-LargestNumber ($targetArray) {
