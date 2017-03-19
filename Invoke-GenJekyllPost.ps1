@@ -27,6 +27,15 @@ tags:
 "@
 
     $fileName=("{0}-{1}.md" -f (Get-Date).ToString("yyyy-MM-dd"),($title -replace ",| ","-")) -replace "--","-"
- 
+
+    $basepath="C:/Users/Douglas/Documents/GitHub/dfinke.github.io" 
+    
+    
+    if($postType -eq 'post') {
+        $fileName="$($basepath)/_posts/$($fileName)"
+    } else {
+        $fileName="$($basepath)/_drafts/$($fileName)"        
+    }
+    
     $content | Set-Content -Encoding Ascii $fileName
 }
