@@ -52,7 +52,7 @@ Running this gives these results.
 
 ![](/images/posts/GetLargestNumberPester.png)
 
-One test passed, and two failed. In eight lines of PowerShell there are already errors, and looking at it, they're not readily apparent. Plus, the first test, for the # 5, the function works, but when you shuffle the array, the last fails.
+One test passed, and two failed. In eight lines of PowerShell there are already errors, and looking at it, they're not readily apparent. Plus, the first test, for the # 5, the function works, but when you shuffle the array, the second test fails.
 
 Now, many reading this might quip, just use `Measure-Object`. I will and to note, what if I needed to build this because I wanted to generate a file showing the comparisons done. Or, wanted to boost the performance?
 
