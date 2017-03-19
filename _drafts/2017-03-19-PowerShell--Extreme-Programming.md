@@ -84,4 +84,12 @@ Developing the discipline for writing tests changes how you look at code and I b
 
 Getting a call at 2am on a Saturday and being able to run a suite of tests against production scripts is fantastic safety net. Then going in, adding a test that demonstrates the error, followed by modifying the scripts, re-running the tests and seeing what breaks, you have the confidence you're not introducing problems that were already solved.
 
-Ultimately, understanding how *Test Driven Development (Design)* can make you a more agile scripter will allow you to make an informed choice of using them or not.
+> Ultimately, understanding how *Test Driven Development (Design)* can make you a more agile scripter will allow you to make an informed choice of using them or not.
+
+The benefits don't stop there. Here are a few more.
+
+1. Other scripters can see if the script still works
+1. As you build larger solutions and include these scripts, you can have greater test coverage
+1. Tests can document how the target script can be used
+1. Reduces the defect rate. Plus as you make changes over time, tests help to ensure things are working well
+1. Let's you *ruthlessly refactor*. In this example, the core logic was completely replaced with built in PowerShell functions. As new versions of PowerShell are released, can you confidently replace your code with built-in?
