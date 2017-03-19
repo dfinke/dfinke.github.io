@@ -2,9 +2,8 @@
     param(
         [parameter(Mandatory)]
         $name,
-        [parameter(Mandatory)]
         $title,
-        $description="This is the description",
+        $description,
         [ValidateSet('Post','Draft')]
         $PostType="Draft"
     )
@@ -22,6 +21,14 @@
     
     $postDate = $date.ToString("yyyy-MM-dd HH:mm:ss")
 
+    if(!$title) {
+        $title=$name
+    }
+
+    if(!$description) {
+        $description=$name
+    }
+    
     $init = @"
 ---
 layout: post
@@ -33,13 +40,9 @@ categories:
     - PowerShell
 tags: 
     - PowerShell
-    - classes
-##thumbnail: /images/posts/powershell-classes-and-concepts/powershell-highlander.png
+# thumbnail
 ---
 "@
 
     $init  | Set-Content $fullName -Encoding Ascii
 }
-
-#cls
-#New-BlogPost test-post "A test post"
