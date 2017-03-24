@@ -11,6 +11,14 @@ tags:
 ---
 
 ## The Setup
+I got trolled on a social network after encouraging someone to continue to learn how to do testing in PowerShell with Pester. That in the end, understanding how to test your code and prove it works makes you better at what you do. I list what I thought were pros to testing and go called out that I was making thngs up.
+
+I don't remember where I saw the example below. I believe it was a Kent Beck book on testing from a decade plus ago (if someone recognizes it, let me know). What I liked about it was it was simple short amount of code to take an array and return the largest number in it. In these few lines, there are a number of errors. Further complications come from the fact that PowerShell is a dynamic language which introduces both productivity and unexpected side effects.
+
+A handful of tests help show that there are errors in the code. As you work through solving the errors, and re-running the tests with each change, you can see yourself solving the problem and not introducting bugs to the working parts. If you do introduce bugs to the working parts, you can revert your (I hope you're using version control) and start again. So testing actually help you go faster. In a larger code base, having existing tests let's you have the confidence to ruthlessly refactor into a better design
+
+## The Code
+Let's write a function that returns the largest number in an array.
 
 ```powershell
 function Get-LargestNumber ($targetArray) {
