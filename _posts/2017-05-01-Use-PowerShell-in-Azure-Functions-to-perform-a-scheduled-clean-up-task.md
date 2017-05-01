@@ -15,15 +15,15 @@ This post shows you how to use Azure Functions to create a function in PowerShel
 ## The Azure Portal
 Log into Azure and navigate to one of your existing function apps or create a new one.
 
-![](..\images\posts\FunctionAppsList.png)
+![](/images/posts/FunctionAppsList.png)
 
 Click on the `+` to create a new function.
 
-![](..\images\posts\FunctionAppCustomFunction.png)
+![](/images/posts/FunctionAppCustomFunction.png)
 
 Then click on `Custom function`.
 
-![](..\images\posts\FunctionAppDetail.png)
+![](/images/posts/FunctionAppDetail.png)
 
 Choose `PowerShell` in the `Language` drop down. Then the `TimerTrigger-PowerShell`. Notice the `Schedule`, this is a [cron](https://en.wikipedia.org/wiki/Cron#Overview) format. You can set it here or update it later. Now, click `Create`.
 
@@ -31,7 +31,7 @@ Choose `PowerShell` in the `Language` drop down. Then the `TimerTrigger-PowerShe
 
 Your all set to go. You can paste any valid PowerShell here (note: valid PowerShell v4.0), save it and the function will run it based on the schedule you set.
 
-![](..\images\posts\FunctionAppsScript.png)
+![](/images/posts/FunctionAppsScript.png)
 
 Now let's see what PowerShell we can use to access an SQL database in the Azure cloud.
 
