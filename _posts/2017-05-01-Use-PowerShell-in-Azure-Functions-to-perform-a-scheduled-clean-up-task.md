@@ -29,11 +29,11 @@ Choose `PowerShell` in the `Language` drop down. Then the `TimerTrigger-PowerShe
 
 ## Here is where you paste your PowerShell
 
-Your all set to go. You can paste any valid PowerShell here (note: valid PowerShell v4.0), save it and the function will run it based on the schedule you set.
+You're all set to go. You can paste any valid PowerShell here (note: valid PowerShell v4.0), save it and the function will run based on the schedule you set.
 
 ![](/images/posts/FunctionAppsScript.png)
 
-Now let's see what PowerShell we can use to access an SQL database in the Azure cloud.
+Now let's see what PowerShell we can use to access a SQL database in the Azure cloud.
 
 ## Use Invoke-Sql
 This is a shorter version of Lee Holmes' version, I removed the part that can read Excel or Access files.
@@ -93,7 +93,7 @@ function Invoke-Sql {
 Next up, let's call it with some parameters.
 
 ## Calling Invoke-Sql
-Here we go, specify the `uid` and `pwd`. Construct your `sqlcommand`, specify your `datasource` (here you can also point to an Azure database), finally identify the `database` and you have an Azure function that runs on a timer and deletes rows from a table in your database.
+Here we go, specify the `uid` and `pwd`. Construct your `sqlcommand`, specify your `datasource` (here you can also point to an Azure database), finally identify the `database` and you have an Azure function that runs on a timer and deletes rows from a table.
 
 ```powershell
 $uid = '<The SQL User ID>'
