@@ -10,8 +10,6 @@ tags:
     - PowerShell,Azure Functions, Slack
 ---
 
-## Use Serverless PowerShell to Extend Slack
-
 Serverless functions are the future. Microsoft Azure Functions let you create PowerShell Http triggers. That means, you can put your PowerShell in the cloud and access it as a REST API. 
 
 > Azure Function promises easy use of PowerShell as part of your cloud workflows without a dedicated server and enabling other services to invoke the PowerShell parts. 
