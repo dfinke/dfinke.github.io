@@ -7,7 +7,7 @@ description: "PowerShell, The Community and Version 6.0"
 categories: 
     - PowerShell
 tags: 
-    - PowerShell,Humanizer,V6
+    - PowerShell, Humanizer, V6
 ---
 
 The Powershell community has been very good to me for a long time. I've published a few Powershell modules to the [Powershell Gallery](https://www.powershellgallery.com/items?q=doug+finke&x=0&y=0) which are up on [GitHub](https://github.com/dfinke) too.
@@ -21,4 +21,4 @@ Chris logged an issue for Powershell's version 6.0 ETS (extended type system) wh
 
 The Microsoft PowerShell Team used PowerShellHumanizer as a use case and resloved the error for all PowerShell developers. Thank you Microsoft and thank you Chris for making the Humanizer module and PowerShell better.
 
->Also: Thanks to  [Mehdi Khalili](https://github.com/Humanizr/Humanizer) for writing the C# DLL for .NET Humanizer we wrapped.
+> Also: Thanks to  [Mehdi Khalili](https://github.com/Humanizr/Humanizer) for writing the C# DLL for .NET Humanizer we wrapped.
