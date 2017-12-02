@@ -46,6 +46,7 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-gems: ['jekyll-paginate', 'jemoji', 'jekyll-sitemap', 'jekyll-gist']
+# gems: ['jekyll-paginate', 'jemoji', 'jekyll-sitemap', 'jekyll-gist']
+plugins: ['jekyll-paginate', 'jemoji', 'jekyll-sitemap', 'jekyll-gist']
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
