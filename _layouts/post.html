@@ -7,10 +7,10 @@ layout: default
       <time datetime="{{ page.date | date: "%-d %b %Y" }}" class="post-meta__date date">
         Posted on {{ page.date | date: "%-d %b %Y" }}.
         {% if page.modified %} Last updated {{ page.modified | date: "%-d %b %Y" }}.{% endif %}
-      </time> &#8226; 
+      </time> &#8226;
       <span class="post-meta__tags">Tags:
         {% for tag in page.tags %}
-          <a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> 
+          <a href="{{ "/" | relative_url }}tags/#{{ tag }}">{{ tag }}</a>
         {% endfor %}
       </span>
     </div>

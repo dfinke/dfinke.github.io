@@ -2,7 +2,7 @@
   <i class="icon icon-list btn-mobile-menu__icon"></i>
   <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
 </span>
-  
+
 <!--style="background-image: url({{ "images/cover.jpg" | prepend: site.baseurl }})"-->
 
 <header class="panel-cover" >
@@ -10,10 +10,10 @@
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-        
+
           <img src="https://avatars2.githubusercontent.com/u/67258?v=3&s=460" class="user-image" alt="My Profile Photo">
           <h1 class="panel-cover__title panel-title">
-            [<a href="{{ site.baseurl }}" title="link to home of {{ site.author.name }}">{{ site.author.name }}</a>@<a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">{{ site.author.github_username }}</a>]
+            [<a href="{{ "/" | relative_url }}" title="link to home of {{ site.author.name }}">{{ site.author.name }}</a>@<a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">{{ site.author.github_username }}</a>]
           </h1>
 
         <hr class="panel-cover__divider">
@@ -27,13 +27,13 @@
 
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="{{ "/" | relative_url }}#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
             </ul>
           </nav>
 
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
-          
+
             {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">
@@ -91,7 +91,7 @@
                 <span class="label">RSS</span>
               </a>
             </li>
-          
+
             </ul>
           </nav>
 
