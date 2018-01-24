@@ -50,3 +50,5 @@ kramdown:
 plugins: ['jekyll-paginate', 'jemoji', 'jekyll-sitemap', 'jekyll-gist']
 
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+
+theme: jekyll-theme-cayman
