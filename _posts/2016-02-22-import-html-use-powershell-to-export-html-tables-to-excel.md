@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: page
 title:  "Import-Html Use PowerShell to Export Html Tables to Excel"
 date:   2016-02-22 20:41
 comments: true
 description: "Import-Html Use PowerShell to Export Html Tables to Excel"
-categories: 
+categories:
     - PowerShell
-tags: 
+tags:
     - PowerShell
     - Excel
 ---
