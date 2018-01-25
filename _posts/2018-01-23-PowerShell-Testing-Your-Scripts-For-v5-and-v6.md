@@ -48,7 +48,9 @@ Each version of PowerShell are passed the same 3 lines. First is shows what vers
 **Note**: These lines of script can be put into a `.ps1` and called from the `- ps:` section. That is recommended. This was done this way for easy illustration.
 
 ## The End
+
 Here's the results:
+
 ![](/images/posts/appveyorv5v6Results.png)
 
 
