@@ -10,7 +10,7 @@ tags:
     - PowerShell
 ---
 
-## PowerShell, GitHub and Appveryor
+## PowerShell, GitHub and Appveyor
 
 In this post I'll walk through how to use [GitHub](https://github.com/) and [Appveyor](https://www.appveyor.com/) to quickly and easily run your PowerShell Pester tests in both v5 and V6 of PowerShell. This way you'll have confidence in your scripts being able to run across versions.
 
