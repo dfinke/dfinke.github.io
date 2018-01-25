@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "PowerShell - Testing Your Scripts For v5 and v6"
 date:   2018-01-23 19:00:00
 comments: true
@@ -13,6 +13,8 @@ tags:
 In this post I'll walk through how to use [GitHub](https://github.com/) and [Appveyor](https://www.appveyor.com/) to quickly and easily run your PowerShell Pester tests in both v5 and V6 of PowerShell. This way you'll have confidence in your scripts being able to run across versions.
 
 You can create free accounts for both [GitHub](https://github.com/) and [Appveyor](https://www.appveyor.com/). Then, fork my [repo](https://github.com/dfinke/TestPS5andPS6) and easily add it to your [Appveyor](https://www.appveyor.com/) to see it work.
+
+You can check out a the [CI Build Results](https://ci.appveyor.com/project/dfinke/testps5andps6).
 
 **GitHub** is a website that hosts git, a version control system. **Appveyor** is a continuous integration solution for windows.
 
