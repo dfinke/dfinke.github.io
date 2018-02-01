@@ -65,8 +65,8 @@ That's access to 4259 PowerShell functions, 133 PowerShell modules, unfortunatel
 ## I'm a fan
 I like Yaml, I like PowerShell. Check out my posts on it. Bringing Yaml to VSTS is a perfect match!
 
-[The Troika : PowerShell, YAML and PowerShell Classes](https://dfinke.github.io//2016/The-Troika-PowerShell-YAML-and-PowerShell-Classes/)
+[The Troika : PowerShell, YAML and PowerShell Classes](https://dfinke.github.io/powershell/2016/08/10/The-Troika-PowerShell-YAML-and-PowerShell-Classes.html)
 
-[Part 2 - The Troika : PowerShell, YAML and PowerShell Classes](https://dfinke.github.io//2016/part-2-the-troika-powershell-yaml-and-powershell-classes/)
+[Part 2 - The Troika : PowerShell, YAML and PowerShell Classes](https://dfinke.github.io/powershell/2016/08/12/part-2-the-troika-powershell-yaml-and-powershell-classes.html)
 
-[Part 3 - The Troika : PowerShell, YAML and PowerShell Classes](https://dfinke.github.io//2016/part-3-the-troika-powershell-yaml-and-powershell-classes/)
+[Part 3 - The Troika : PowerShell, YAML and PowerShell Classes](https://dfinke.github.io/powershell/2016/08/13/part-3-the-troika-powershell-yaml-and-powershell-classes.html)
