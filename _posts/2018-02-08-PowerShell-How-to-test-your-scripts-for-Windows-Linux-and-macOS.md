@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "PowerShell - How to test your scripts for Windows, Linux and macOS"
-date:   2018-01-23 19:00:00
+date:   2018-02-08 18:00:00
 comments: true
 description: "PowerShell - How to test your scripts for Windows, Linux and macOS"
 categories:
