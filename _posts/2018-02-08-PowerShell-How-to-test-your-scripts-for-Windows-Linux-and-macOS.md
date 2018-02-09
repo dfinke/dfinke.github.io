@@ -46,3 +46,5 @@ Both services provide the badges below, giving at a glance indication if your bu
 
 # Finally
 The difference between a good PowerShell scripter and a great PowerShell scripter is the number of tests they write and their CI/CD pipeline. With these in place, you'll be able confidently fix your scirpts, enhance them and even deliever experimental versions with less pain and less drama.
+
+Fork my repo [https://github.com/dfinke/PSMatcher](https://github.com/dfinke/PSMatcher) and then connect your version to Appveyor and/or Travis-CI to see how it works. Next, tweak the tests and finally, build your own repo using the `yml` here.
