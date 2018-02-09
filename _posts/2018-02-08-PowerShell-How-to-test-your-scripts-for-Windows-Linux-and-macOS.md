@@ -30,9 +30,9 @@ Let's talk about three free services that make this happen (so long as you scrip
 
 Visit these websites and sign up. Is fast and free.
 
-* https://github.com/
-* https://www.appveyor.com/
-* https://travis-ci.org
+* [https://github.com/](https://github.com/)
+* [https://www.appveyor.com/](https://www.appveyor.com/)
+* [https://travis-ci.org](https://travis-ci.org)
 
 Once signed up and check in your scripts and `yaml` files. Next, connect the repo to Appveyor and Travis-CI. Now when you check in a change, GitHub will notify both services. These services will `checkout` your code, spin up the operating systems you requested and run the Pester tests in the version of PowerShell you specifed.
 
