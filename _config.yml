@@ -13,8 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Researching the optimal; implementing the practical
-Email Doug with your automation needs
+title: Researching the optimal; implementing the practical. Email Doug with your automation needs
 email: finked@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Using Automation to create bandwidth to address technical debt
