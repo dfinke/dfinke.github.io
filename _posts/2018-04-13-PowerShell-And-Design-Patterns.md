@@ -11,7 +11,6 @@ tags:
     - PowerShell, Design Patterns
 ---
 
-# PowerShell and Design Patterns
 Writing good software is hard. Writing reusable software, is even harder.
 
 Writing good PowerShell scripts is hard. Writing reusable PowerShell scripts, is even harder. This is re-phrasing a line from the book "Design Patterns Elements of Reusable Object-Oriented Software".
