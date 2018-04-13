@@ -43,7 +43,7 @@ Learning design patterns can be fun, make you more productive, and a better Powe
 
 *Note*: Design Patterns was inspired by books written by Christopher Alexander on architecture and building
 
-## How Did I Get Here
+## How Did We Get Here
 Chris Hunt and I have collaborating for the past few years in different capacities. He reached out to me with ideas and ultimately a pull request on an open source project I put together PowerShellHumanizer. It didn't stop there.
 
 We interact regularly, sharing ideas, both good and bad (on both sides), giving and receiving feedback on approaches, code and more.
