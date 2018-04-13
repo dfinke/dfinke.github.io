@@ -70,7 +70,7 @@ Enjoy!
 ## Adapter Pattern in PowerShell
 
 ### Intent
-The adapter pattern, also known as Wrapper, allows the interface of an existing item to be used as another.
+The adapter pattern, also known as *Wrapper*, allows the interface of an existing item to be used as another.
 
 ## PowerShell Example
 
