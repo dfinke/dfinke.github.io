@@ -81,7 +81,7 @@ If not, get a free one [here](https://azure.microsoft.com/en-us/free/). Then cli
 [Head over to the repo](https://github.com/dfinke/HtmlPageFromPowerShellAzureFunction) and click on the button and also check out the live code.
 
 ### Or Check out PowerShell Returning HTML from and Azure Function
-Here's the link pointing to the deployed Azure Function from GitHub, and auto wired to the repo https://tryhtmlfromps.azurewebsites.net/api/HtmlPage.
+Here's the link pointing to the deployed Azure Function from GitHub, and auto wired to the repo [https://tryhtmlfromps.azurewebsites.net/api/HtmlPage](https://tryhtmlfromps.azurewebsites.net/api/HtmlPage).
 
 If I update the code, it auto deploys to the Azure Function. Very cool!
 
