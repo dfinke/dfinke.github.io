@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "PowerShell Serving an HTML Page from AzureFunctions"
+title:  "PowerShell Serving an HTML Page from an Azure Function"
 date:   2018-04-24 10:00
 comments: true
-description: "PowerShell Serving an HTML Page from Azure Functions."
+description: "PowerShell Serving an HTML Page from an Azure Functions."
 categories:
     - PowerShell
 tags:
