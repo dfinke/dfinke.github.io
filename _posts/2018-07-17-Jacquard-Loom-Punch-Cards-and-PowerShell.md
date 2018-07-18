@@ -10,7 +10,7 @@ tags:
     - PowerShell, Jacquard, Loom, Knitting
 ---
 
-I'm resurrecting this old post, from *July 2008*, it's ten years old. I show a knitting language in PowerShell and it all started from a tweet.
+I'm resurrecting this old post, from *July 2008*, it's ten years old. I show a ***knitting language*** I built in PowerShell and this dusting off all started from a tweet.
 
 Thanks to [@mellobeing](https://twitter.com/mellowbeing/status/1018508770337574914) who tweeted about wanting to meet more coders who do more than code, specifically, knitters and crafters.
 
@@ -85,21 +85,6 @@ purl purl
 **Example 2**
 
 ```ps
-KnittingLanguage ( (list k1 p2) * 2)
-```
-
-**Result**
-
-```
-knit
-purl purl
-knit
-purl purl
-```
-
-**Example 3**
-
-```ps
 KnittingLanguage ( (list k2tog yo k1 yo cdd ssk yo k3) * 2 )
 ```
 
@@ -124,7 +109,7 @@ knit
 knit knit knit
 ```
 
-**Example 4**
+**Example 3**
 
 ```ps
 KnittingLanguage k4
