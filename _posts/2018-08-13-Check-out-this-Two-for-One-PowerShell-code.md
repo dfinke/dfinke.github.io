@@ -90,3 +90,7 @@ Of the PowerShell In Action:
 ## Summary
 
 Re-purposing effort makes us more agile, improves cycle time (from idea to customers using it). This module bumps you up to the next level.
+
+## Get it on GitHub
+
+[dfinke/ConvertFromReadmeMD](https://github.com/dfinke/ConvertFromReadmeMD)
