@@ -15,15 +15,15 @@ I showed the PowerShell script that transforms a simple markdown file, with a co
 
 ## Create a PDF
 
-There's another cool feature in the module. If you have both Pandoc and the LaTEX library MiKTeX installed, you can use the `-InvokePandoc` switch to generate a PDF, table of contents included, like this.
+There's another cool feature in the module. If you have both Pandoc and the LaTEX library MiKTeX installed, you can use the `-AsPDF` switch to generate a PDF, table of contents included, like this.
 
 ```powershell
-ConvertFrom-ReadmeMD -InvokePandoc
+ConvertFrom-ReadmeMD -AsPDF
 ```
 
 ## Markdown To PDF
 
-After running `ConvertFrom-ReadmeMD -InvokePandoc`, converting the markdown contents to separate chapter files, and running PowerShell ScriptAnalyzer on your samples. `ConvertFrom-ReadmeMD` will look to see if the Pandoc tool is installed, and run it against the chapter files, creating the PDF complete with a table of contents.
+Running `ConvertFrom-ReadmeMD -AsPDF`, converts the markdown contents to separate chapter files, runs PowerShell ScriptAnalyzer on your samples, and then looks to see if the Pandoc tool is installed. If so, it runs it against the chapter files, creating the PDF complete with a table of contents.
 
 ![](/images/posts/MarkdownToPDF.png)
 
@@ -34,5 +34,3 @@ So, grab the module on the [PowerShell Gallery](https://www.powershellgallery.co
 
 * [Pandoc - a universal document converter](https://pandoc.org/installing.html#windows)
 * [MiKTeX is an implementation of TeX/LaTeX](https://miktex.org/howto/install-miktex)
-
-
