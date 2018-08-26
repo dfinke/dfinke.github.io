@@ -13,7 +13,7 @@ tags:
 In the last post [Check out this Two for One PowerShell code](https://dfinke.github.io/powershell,%20markdown/2018/08/13/Check-out-this-Two-for-One-PowerShell-code.html)
 I showed the PowerShell script that transforms a simple markdown file, with a couple additions, into book chapters and how it also uses the PowerShell ScriptAnalyzer to check the code samples in your markdown for correctness.
 
-## In Action Video
+## Convert From Markdown: In Action Video
 
 Check it out, [How to ConvertFrom-Markdown](https://www.youtube.com/watch?v=z41g58gwdFw&t=1s) with all the bells and whistles.
 
