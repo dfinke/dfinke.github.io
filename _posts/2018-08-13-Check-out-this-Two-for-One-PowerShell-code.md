@@ -67,7 +67,7 @@ Then, it pulls out the PowerShell code and runs the PowerShell ScriptAnalyzer on
 
 ## In Action
 
-Running the `ConverFrom-ReadmeMD` on a markdown file does a few things. It extracts the code in the fenced code blocks and runs the PowerShell ScriptAnalyzer against it
+Running the `ConvertFrom-Markdown` on a markdown file does a few things. It extracts the code in the fenced code blocks and runs the PowerShell ScriptAnalyzer against it
 
 ### The Analyzer
 ![](/images/posts/Convert.png)
@@ -91,6 +91,7 @@ Of the PowerShell In Action:
 
 Re-purposing effort makes us more agile, improves cycle time (from idea to customers using it). This module bumps you up to the next level.
 
-## Get it on GitHub
+## Get the Module
 
-[dfinke/ConvertFromReadmeMD](https://github.com/dfinke/ConvertFromReadmeMD)
+* [PowerShell Gallery](https://www.powershellgallery.com/packages/ConvertFromMarkdown)
+* [GitHub](https://github.com/dfinke/ConvertFromMarkdown)
