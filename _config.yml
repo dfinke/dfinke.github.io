@@ -17,7 +17,7 @@ title: Researching the optimal; implementing the practical
 email: finked@hotmail.com
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Contact Doug with your autmation needs email finked@hotmail.com
+  Contact Doug with your automation needs email finked@hotmail.com
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dfinke.github.io" # the base hostname & protocol for your site, e.g. http://example.com
