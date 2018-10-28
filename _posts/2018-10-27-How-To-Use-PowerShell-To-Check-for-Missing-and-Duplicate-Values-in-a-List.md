@@ -105,6 +105,6 @@ Missing   Duplicate
 
 Using the `Measure-Command` and running this against a list `1..27000`, it took 31 seconds on my machine to process. Also, while not tested, this should work on non-integer items as well.
 
-I encourage you to check out the book `Programming Pearls`. At the end of the chapter, Jon Bentley suggests further reading and additional ways to think about solving this and points to examples, even though they are form a different "computing era" they are informative.
+I encourage you to check out the book `Programming Pearls`. At the end of the chapter, Jon Bentley suggests further reading and additional ways to think about solving this and points to examples, even though they are from a different "computing era" they are informative.
 
 > As Mr. Bentley says "reading about these approaches to software can change the way you think about programming"
