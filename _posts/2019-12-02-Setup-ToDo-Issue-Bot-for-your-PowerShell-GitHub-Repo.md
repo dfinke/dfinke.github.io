@@ -37,7 +37,7 @@ function Get-TargetUsers {
 
 The `todo` bot then automatically generates a formatted issue in your repo, labeled, assigned, shows a snippet of code for context with a link back to the changed file.
 
-![](../images/posts/todoBot.png)
+![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/todoBot.png)
 
 ## Automate the Tedium
 
