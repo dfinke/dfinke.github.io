@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Setup PowerShell Azure Authentication for Pulumi"
-date:   2018-11-29 09:00
+date:   2018-12-07 09:00
 comments: true
 description: "Setup-PowerShell-Azure-Authentication-for-Pulumi"
 categories:
@@ -36,3 +36,4 @@ $ pulumi config set azure:clientSecret "YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY" --
 $ pulumi config set azure:tenantId "ZZZZZZZZ-ZZZZ-ZZZZ-ZZZZ-ZZZZZZZZZZZZ"
 ```
 
+This eliminates having to do `az login`, which expires.
