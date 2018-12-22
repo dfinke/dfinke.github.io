@@ -40,38 +40,42 @@ Here is what you *must* have in order to play along.
 * Sign up for the [GitHub Actions Beta](https://github.com/features/actions/signup)
 
 
-## Fork the repo
 
-1. fork it
-1. clone it
-1. update main.workflow
-1. commit & push
-1. add a secret
-1. make repo private
-1. click on actions to see the workflow start
-1. check the azure portal
+## Step 1 - Fork the Repo
 
-## Step 1
+Head over to https://github.com/dfinke/Demo-PowerShell-GitHub-Actions. This demo repo has all you need to get started.
+
+Click on the `Fork` button in the top right, once forked, got to `Step 2`.
 
 ![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/01ForkRepo.png)
 
-## Step 2
+## Step 2 - Create a Secret
+
+Your GitHub Action will need a secret, this secret is the password you created for your Azure Service Principal. Click on settings, then `Step 3`.
 
 ![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/02Settings.png)
 
-## Step 3
+## Step 3 - Click Secrets
+
+Once in the `Settings` tab, on the left, click `Secrets` to go to where you can enter the key value pair, that's `Step 4`.
 
 ![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/03CreateSecret.png)
 
-## Step 4
+## Step 4 - Add new secret
+
+Click the `Add new secret` and you'll get to the UI in `Step 5`.
 
 ![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/04NewSecrete.png)
 
-## Step 5
+## Step 5 - Enter the secret
+
+Name your secret `SERVICE_PASS`, you'll see this specified in the `main.workflow` file. The `value` of this is the password you created for your Azure Service Principal.
 
 ![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/05AddServicePassword.png)
 
 ## Update the main.workflow
+
+OK, almost there. There is one more setting needed to make the GitHub Action workflow come together, the `TENANT_ID`. This is in the output from creating Azure Service Principal.
 
 From the GitHub page on the forked repo:
 
@@ -83,6 +87,8 @@ From the GitHub page on the forked repo:
 Here is where you update the the `TENANT_ID`, and/or the other values in the `env` section.
 
 *Note*: This `TENANT_ID` was provided when you created the `Service Principal`.
+
+After making the edits, click the `Start Commit` button, then the `Commit Changes` button. After you do this. Click the `Actions` tab at the top, and your workflow should be scheduled shortly.
 
 ## What do all these files mean?
 
