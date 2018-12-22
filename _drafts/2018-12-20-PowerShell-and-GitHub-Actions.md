@@ -25,8 +25,7 @@ In this post I'll walk through setting up a GitHub Action in which I'll use Powe
 A short list of links for more info.
 
 * [GitHub Actions](https://github.com/features/actions)
-* [From the course: GitHub Actions First Look
-](https://www.linkedin.com/learning/github-actions-first-look?u=0)
+* [From the course: GitHub Actions First Look](https://www.linkedin.com/learning/github-actions-first-look)
 * [Introducing GitHub Actions](https://css-tricks.com/introducing-github-actions/)
 * [Cutting My Teeth on PowerShell Flavoured GitHub Actions](https://king.geek.nz/2018/12/20/powershell-flavoured-github-actions/)
 
@@ -42,6 +41,16 @@ Here is what you *must* have in order to play along.
 * Sign up for the [GitHub Actions Beta](https://github.com/features/actions/signup)
 
 
+## Fork the repo
+
+* fork it
+* clone it
+* update main.workflow
+* commit & push
+* add a secret
+* make repo private
+* click on actions to see the workflow start
+* check the azure portal
 
 ## Images
 
