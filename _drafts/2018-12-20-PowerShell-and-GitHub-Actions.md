@@ -37,20 +37,19 @@ Here is what you *must* have in order to play along.
     - [Create your Azure free account today](https://azure.microsoft.com/en-us/free)
 * [Azure service principal](https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-1.0.0)
 * [GitHub Account](https://github.com/join)
-    - You need to be able to create `private` repos. The `beta` does not yet work with `public` repos
 * Sign up for the [GitHub Actions Beta](https://github.com/features/actions/signup)
 
 
 ## Fork the repo
 
-* fork it
-* clone it
-* update main.workflow
-* commit & push
-* add a secret
-* make repo private
-* click on actions to see the workflow start
-* check the azure portal
+1. fork it
+1. clone it
+1. update main.workflow
+1. commit & push
+1. add a secret
+1. make repo private
+1. click on actions to see the workflow start
+1. check the azure portal
 
 ## Step 1
 
@@ -74,9 +73,18 @@ Here is what you *must* have in order to play along.
 
 ## Update the main.workflow
 
-Set the TENANT_ID. This ID was provided when you created the `Service Principal`.
+From the GitHub page on the forked repo:
 
-## Images
+* click on `.github`
+* click on `main.workflow`
+* click on edit, the pencil icon on the right just above diagram canvas
+* click on `<edit file>`
+
+Here is where you update the the `TENANT_ID`, and/or the other values in the `env` section.
+
+*Note*: This `TENANT_ID` was provided when you created the `Service Principal`.
+
+## What do all these files mean?
 
 Here we'll walk though what makes up the key components of a GitHub Action.
 
@@ -110,8 +118,8 @@ Here you
 
 * (See line 1) Request an image, ubuntu, with PowerShell Core installed, `FROM` statement.
 * (See line 1) Update `apt-get` (think PowerShell `Update-Module`) and install git (think PowerShell `Install-Module`)
-* (See line 5) Copy the PowerShell file onto the image
-* (See line 6) Instruct what runs when this whole thing get spun up. Here, were are starting PowerShell Core with that copied file
+* (See line 5) Copy the PowerShell file to the image
+* (See line 6) Instruct what runs when the image gets spun up. Here, were are starting PowerShell Core with `.\entrypoint.ps1`
 
 ![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/dockerfile.png)
 
@@ -138,4 +146,5 @@ Line 18 forms the `url` and sets it to `$remote`. This is needed for the `git re
 
 ![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/entrypointX.png)
 
-That's it.
+## That's it!
+
