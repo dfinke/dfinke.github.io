@@ -134,7 +134,7 @@ Once provisioned, we need the auto generated `userName` and `userPWD` that is cr
 
 It returns two items, one is the `MSDEPLOY` creds and the other `FTP`. Line 17 finds the `MSDEPLOY`.
 
-Line 18 forms the `url` and sets it to `$remote`. This is needed for the `git remote add` (line 20) so you can `git push` (line 21) the actually application.
+Line 18 forms the `url` and sets it to `$remote`. This is needed for the `git remote add` (line 20) so you can `git push` (line 21) the web application.
 
 ![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/entrypointX.png)
 
