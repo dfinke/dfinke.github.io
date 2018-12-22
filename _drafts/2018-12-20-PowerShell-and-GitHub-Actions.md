@@ -52,6 +52,30 @@ Here is what you *must* have in order to play along.
 * click on actions to see the workflow start
 * check the azure portal
 
+## Step 1
+
+![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/01ForkRepo.png)
+
+## Step 2
+
+![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/02Settings.png)
+
+## Step 3
+
+![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/03CreateSecret.png)
+
+## Step 4
+
+![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/04NewSecrete.png)
+
+## Step 5
+
+![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/05AddServicePassword.png)
+
+## Update the main.workflow
+
+Set the TENANT_ID. This ID was provided when you created the `Service Principal`.
+
 ## Images
 
 Here we'll walk though what makes up the key components of a GitHub Action.
