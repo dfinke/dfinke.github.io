@@ -154,3 +154,5 @@ Line 18 forms the `url` and sets it to `$remote`. This is needed for the `git re
 
 ## That's it!
 
+This one way to quickly get up and running with GitHub Actions. You can expand on the workflow and the PowerShell script to do whatever automation fits your needs.
+One of the things not covered in this post is using the GitHub Actions Workflow UI. Check out [Introducing GitHub Actions](https://css-tricks.com/introducing-github-actions/) for a walk through on that. I used that post as a basis for this, replacing it with a PowerShell approach.
