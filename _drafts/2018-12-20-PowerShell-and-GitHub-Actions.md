@@ -102,7 +102,7 @@ For creating the Azure Service Principal, and using the UI to initialize the `ma
 
 ## Directory Layout
 
-[INSERT THE PUBLIC SCRUBBED REPO]
+Head over to the GitHub repo https://github.com/dfinke/Demo-GitHubActions-PowerShell-DeployAureWebApp. After reviewing, fork it add your Azure Service Principal Tenant ID and Password to see it in action.
 
 Here's the directory layout that the `main.workflow` will use you can see it in the `uses` key value pair in the next picture. The `Dockerfile` describes what runtime image is used in the action along with how to compose it and what to do when this all spins up.
 

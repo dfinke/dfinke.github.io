@@ -102,8 +102,6 @@ For creating the Azure Service Principal, and using the UI to initialize the `ma
 
 ## Directory Layout
 
-[INSERT THE PUBLIC SCRUBBED REPO]
-
 Here's the directory layout that the `main.workflow` will use you can see it in the `uses` key value pair in the next picture. The `Dockerfile` describes what runtime image is used in the action along with how to compose it and what to do when this all spins up.
 
 ![](https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/GitHubActionsImages/fileLayout.png)
