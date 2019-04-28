@@ -116,4 +116,6 @@ action   Shell Lint        uses     actions/bin/shellcheck@master
 action   Shell Lint        args     entrypoint.sh
 ```
 
-Easily transforming text into PowerShell objects is a powerful tool in the toolbox. Definitely check out [PSStringScanner](https://github.com/dfinke/PSStringScanner). I'd love to see what you text processing you get going with this.
+Easily transforming text into PowerShell objects is a powerful tool in the toolbox. Definitely check out [PSStringScanner](https://github.com/dfinke/PSStringScanner).
+
+I'd love to see what text processing you get going with this.
