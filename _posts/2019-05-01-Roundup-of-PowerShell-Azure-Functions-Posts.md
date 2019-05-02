@@ -20,6 +20,10 @@ tags:
 )
 1. [Azure Functions PowerShell developer guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-powershell)
 
+1. [Real-time Azure Resource Monitor](https://github.com/anthonychu/functions-resource-monitor) - Powered by PowerShell Azure Functions, Azure Event Grid, and Azure SignalR Service
+
+![](https://raw.githubusercontent.com/anthonychu/functions-resource-monitor/master/powershell-func-resource-monitor.gif)
+
 ### Tweets
 
 1. [I'm confused, what's different here? I've been using PowerShell based Azure Functions for almost two years.](https://twitter.com/nthonyChu/status/1122543092534349824?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1122543092534349824&ref_url=https%3A%2F%2Fdevclass.com%2F2019%2F04%2F29%2Fpowershell-fans-swoon-as-microsoft-previews-azure-functions-support%2F)
@@ -31,6 +35,16 @@ tags:
 ### GitHub
 
 1. [Azure/azure-functions-powershell-worker](https://github.com/Azure/azure-functions-powershell-worker)
+
+### Visual Studio Code
+
+If you're working with PowerShell AzureFunctions in code, don't forget to enable it in the [Functions extension](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-powershell).
+
+![](/images/posts/PowerShellAzureFunctionsVSC.png)
+
+**via**[Anthony Chu](https://twitter.com/nthonyChu/status/1123701007400296448)
+
+
 
 ### Docker
 
