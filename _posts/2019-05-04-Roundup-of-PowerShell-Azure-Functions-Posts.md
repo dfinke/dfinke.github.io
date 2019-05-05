@@ -52,9 +52,7 @@ If you're working with PowerShell AzureFunctions in code, don't forget to enable
 
 ![](/images/posts/PowerShellAzureFunctionsVSC.png)
 
-**via*- [Anthony Chu](https://twitter.com/nthonyChu/status/1123701007400296448)
-
-
+**via**- [Anthony Chu](https://twitter.com/nthonyChu/status/1123701007400296448)
 
 ## Docker
 
