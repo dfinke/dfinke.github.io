@@ -74,7 +74,7 @@ From a `PowerShell Console` navigate to where you cloned or unzipped the `PowerS
 
 Now, type `func start` and press enter. Lots of messages should scroll by and at the end, you should see something like this.
 
-![image](\images\posts\SignalRFuncStart.png)
+![image](..\images\posts\SignalRFuncStart.png)
 
 Let's give it an end to end spin.
 
