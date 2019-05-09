@@ -89,11 +89,11 @@ You'll get two prompts, the first you can take the default, press enter. The sec
 
 If all goes well, you should see this screen:
 
-![image](\images\posts\SignalRChatWebPage.png)
+![image](/images/posts/SignalRChatWebPage.png)
 
 Type in `Hello World`  and press enter and this should show up.
 
-![image](\images\posts\SignalRChatWebPageHelloWorld.png)
+![image](/images/posts/SignalRChatWebPageHelloWorld.png)
 
 ## Success
 
