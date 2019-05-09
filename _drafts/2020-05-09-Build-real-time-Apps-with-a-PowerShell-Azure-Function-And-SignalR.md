@@ -132,7 +132,7 @@ Now, save it and head back to the `Sererless chat` web page.
 
 Type `Hello again` and press enter. You should see this.
 
-![image](\images\posts\SignalRChatWebPageHelloAgain.png)
+![image](/images/posts/SignalRChatWebPageHelloAgain.png)
 
 ## Notice
 
