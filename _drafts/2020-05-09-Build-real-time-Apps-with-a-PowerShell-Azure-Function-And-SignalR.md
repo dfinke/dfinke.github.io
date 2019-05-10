@@ -105,7 +105,7 @@ Next, let's tweak the message that gets returned.
 
 ## Tweak It
 
-Open the `run.ps` file in the `PSChat\messages` directory. You'll replace the code.
+Open the `run.ps1` file in the `PSChat\messages` directory. You'll replace the code.
 
 From this
 
