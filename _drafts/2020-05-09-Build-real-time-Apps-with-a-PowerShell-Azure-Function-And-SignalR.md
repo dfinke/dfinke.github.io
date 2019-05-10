@@ -51,6 +51,8 @@ mysignalrinstance.service.signalr.net              eastus         443        443
 
 # Grab the PowerShell Code
 
+[Anthony Chu](https://twitter.com/nthonyChu) worked up the PowerShell Azure function example in one if his repo branches. I laid it out here for easier access.
+
 ## Clone or Get the Zip
 - `git clone https://github.com/dfinke/signalr-service-quickstart-powershell-serverless-chat.git`
 - `https://github.com/dfinke/signalr-service-quickstart-powershell-serverless-chat/archive/master.zip`
