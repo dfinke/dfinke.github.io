@@ -10,9 +10,15 @@ tags:
     - PowerShell, Azure Functions, SignalR
 ---
 
-# PowerShell Azure Function Using SignalR
+# It's real-time with PowerShell and Azure Functions
 
-There's a new PowerShell Azure Function preview. There was an old one, done as a proof of concept and now it's been rebuilt, and it is better. So let's take it for a spin and try out some of the new bindings, like SignalR. To get started, you need to check out the [Prerequisites](#Prerequisites) section to setup your environment. It's a one time shot and then you're ready to got to the races building Azure Functions. Serverless functions are the future, I believe learning how to wield them is time well spent.
+Delivering up-to-date information without hitting a refresh button, using PowerShell serverless functions, here's how.
+
+There's a new PowerShell Azure Function preview, v2.0. There's a previous one, a proof of concept and the rebuilt one definitely new and improved. So let's take it for a spin and try out some of the new bindings, like SignalR.
+
+> SignalR is a service that simplifies the process of adding real-time functionality to your application
+
+To get started, you need to check out the [Prerequisites](#Prerequisites) section to setup your environment. It's a one time shot and then you're ready to got to the races building Azure Functions. Serverless functions are the future, I believe learning how to wield them is time well spent.
 
 ## Prerequisites
 
