@@ -150,12 +150,11 @@ That's slick and makes your development loop very productive.
 
 ## Wrap Up
 
-In the next post you'll see how to take this PowerShell Azure Function and publish is to the Azure Cloud so you can share it with friends and family.
+In the next post you'll see how to take this PowerShell Azure Function and publish it to the Azure Cloud so you can share it with friends and family.
 
 Meanwhile, happy PowerShelling.
 
 ## Other Resources
 
-Working Version - C:\Users\Douglas\Documents\GitHub\PSChat\signalr-service-quickstart-serverless-chat\src\chat\powershellλ
 
 - [Roundup of PowerShell Azure Functions Posts](https://dfinke.github.io/powershell,%20azure%20functions/2019/05/04/Roundup-of-PowerShell-Azure-Functions-Posts.html)
