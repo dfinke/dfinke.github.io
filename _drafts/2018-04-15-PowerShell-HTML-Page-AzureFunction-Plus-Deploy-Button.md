@@ -17,7 +17,7 @@ src="https://www.youtube.com/embed/IsXEVQRaTX8" -->
 
 <!-- <iframe width="100%" height="500px" src="https://www.youtube.com/embed/cMIArHKqwQo" frameborder="0" allowfullscreen></iframe> -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aDqqm_gTPjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/aDqqm_gTPjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 This post highlights several cool pieces using Azure Functions, which are serverless, hosting PowerShell and returning an HTML page for viewing in your browser.
 
