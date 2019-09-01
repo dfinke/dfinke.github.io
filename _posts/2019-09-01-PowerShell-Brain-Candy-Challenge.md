@@ -10,9 +10,13 @@ tags:
     - PowerShell, Brain, Candy, Puzzle
 ---
 
-I posted this challenge on the PowerShell [Facebook](https://www.facebook.com/groups/powershell/permalink/2529810203743809/) page and [Twitter](https://twitter.com/dfinke/status/1167559940598370304). Below are the varied solutions presented. If you don't want to be influenced by others answers, stop here and try to solve the puzzle.
+I posted this challenge on the PowerShell [Facebook](https://www.facebook.com/groups/powershell/permalink/2529810203743809/) page and [Twitter](https://twitter.com/dfinke/status/1167559940598370304). Below are the varied solutions presented.
+
+If you don't want to be influenced by others answers, stop here and try to solve the puzzle.
 
 Otherwise, read on.
+
+Thanks to all who took the time solve the challenge.
 
 ![](/images/posts/powerShellBrainCandy.png)
 
