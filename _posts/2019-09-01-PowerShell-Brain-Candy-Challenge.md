@@ -16,7 +16,7 @@ If you don't want to be influenced by others answers, stop here and try to solve
 
 Otherwise, read on.
 
-Thanks to all who took the time solve the challenge.
+> Thanks to all who took the time solve the challenge.
 
 ![](/images/posts/powerShellBrainCandy.png)
 
