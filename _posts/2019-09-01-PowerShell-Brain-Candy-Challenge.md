@@ -81,11 +81,24 @@ Needs color.
 
 ### Subhash Konduru
 
+Needs alignment and color.
+
 ```powershell
 $i=""
 1..9|%{
     [int]$i = ($i.tostring() + ($_).tostring())
     "$i*8+($_) ="+$i*8+($_)
+}
+```
+
+### Aaron Melverton
+
+Needs alignment and color.
+
+```powershell
+1..9 | %{
+    $z=[int]("$z$_")
+    "$z X 8 + $_ = $($z * 8 + $_)"
 }
 ```
 
