@@ -120,13 +120,12 @@ I posted the PowerShell Brain Candy challenge on Twitter, here's what came back.
 
 ### James O'Neill
 
-Needs color
+Needs a version of PS after v5.1 to support `e[ construct
 
 ```powershell
-$j=1
+$j="1"
 1..9 | %{
-    "{0,9} x 8 + $_ = $($j*8+$_)" -f $j
-    $j=$J*10+1+$_
+    "`e[32m{0,9} x 8 + $_ `e[93m= `e[m$($_+8*$j)"-f $j;$j+=$_+1
 }
 ```
 
@@ -214,7 +213,7 @@ While ($pos -lt ($col1.Length + 1)) {
 
 ### Irwin Strachan
 
-With some class.
+With some class. Needs a version of PS after v5.1 to support the `e[ construct
 
 ```powershell
 class BrainCandy{
@@ -233,7 +232,7 @@ class BrainCandy{
     }
 
     [String] ToString(){
-        return "{0,9} x `e[31m 8 + `e[34m {1} = `e[33m {2} `e[39m " -f $this.concatenateNr,$this.Number,$this.result
+        return "{0,9} x`e[31m 8`e[39m + {1} = {2} " -f $this.concatenateNr,$this.Number,$this.result
     }
 }
 
@@ -241,5 +240,4 @@ class BrainCandy{
 ForEach-Object{
     [BrainCandy]::new($_).ToString()
 }
-
 ```
