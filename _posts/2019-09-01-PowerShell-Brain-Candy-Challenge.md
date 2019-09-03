@@ -18,7 +18,7 @@ Otherwise, read on.
 
 > Thanks to all who took the time solve the challenge.
 
-![](/images/posts/powerShellBrainCandy.png)
+![](https://github.com/dfinke/dfinke.github.io/blob/master/images/posts/PowerShellBrainCandy.png?raw=true)
 
 # Solutions
 
@@ -210,4 +210,36 @@ While ($pos -lt ($col1.Length + 1)) {
     Write-Output ('{0} x 8 + {2} = {1}' -f $col1.Substring(0, $pos), $col2.Substring(0, $pos), $col1.Substring($pos - 1, 1))
     $pos ++
 }
+```
+
+### Irwin Strachan
+
+With some class.
+
+```powershell
+class BrainCandy{
+    $Number
+    Hidden $result
+    Hidden $concatenateNr
+
+    BrainCandy ($nr){
+        $this.Number =$nr
+        $this.concatenateNr = $(1..$this.Number -join '')
+        $this.result = $this.calculate()
+    }
+
+    [Int64] calculate(){
+        return $(8 * $this.concatenateNr + $this.Number)
+    }
+
+    [String] ToString(){
+        return "{0,9} x `e[31m 8 + `e[34m {1} = `e[33m {2} `e[39m " -f $this.concatenateNr,$this.Number,$this.result
+    }
+}
+
+1..9 |
+ForEach-Object{
+    [BrainCandy]::new($_).ToString()
+}
+
 ```
