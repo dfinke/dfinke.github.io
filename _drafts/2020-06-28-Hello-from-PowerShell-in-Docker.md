@@ -33,4 +33,4 @@ Invoke-RestMethod http://localhost:8080/ # Hello from PowerShell in Docker
 
 ## How it should look
 
-![](../images/posts/PowerShellMicroservice.png)
+![](/images/posts/PowerShellMicroservice.png)
