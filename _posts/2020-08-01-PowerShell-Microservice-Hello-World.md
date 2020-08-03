@@ -14,13 +14,29 @@ Ever want to run some PowerShell tools (or deliver them to a customer) but don't
 
 Read on to see how Docker is the way to go.
 
-## PowerShell Microservice
+## PowerShell Microservice - Just add the Dockerfile
 
-My GitHub Repo https://github.com/dfinke/PowerShellMicroservice, has a PowerShell script `StartPodeServer.ps1` which creates a web server that serves a PowerShell REST API running as a microservice in a Docker container.
+My GitHub Repo [https://github.com/dfinke/PowerShellMicroservice](https://github.com/dfinke/PowerShellMicroservice), has a PowerShell script `StartPodeServer.ps1` which creates a web server that serves a PowerShell REST API running as a microservice in a Docker container.
 
 It uses [Pode](https://github.com/Badgerati/Pode), a PowerShell module which is a Cross-Platform framework for creating web servers.
 
 You can use the `docker build` command to pull and build all the right pieces from the repo and run it in an isolated container on your machine to check it out.
+
+### The Dockerfile
+
+The docker file has 5 lines. 
+The `FROM` tells docker what base image to pull to build on. The `RUN` says, run `pwsh` and install `Pode` from the PowerShell Gallery. This microservice is a REST API, and it'll run on the port 8080 `EXPOSE 8080`. The `CMD` tells what to do when the Docker container is run. It runs `pwsh` with two statements, `cd` to the directory and then run `StartPodeServer.ps1`. Lastly, the `COPY` copies the current directory to `/usr/src/app/`. 
+
+```docker
+FROM mcr.microsoft.com/powershell:latest
+
+RUN pwsh -c 'Install-Module Pode -force'
+
+EXPOSE 8080
+CMD [ "pwsh", "-c", "cd /usr/src/app; ./StartPodeServer.ps1" ]
+
+COPY . /usr/src/app/
+```
 
 ## Docker Desktop
 
@@ -35,7 +51,7 @@ Build and run the Docker container straight from the repo. This is very compelli
 
 You setup your GitHub repo, create your `Dockerfile`, then you, your colleagues, and others can easily get to your latest implementation quickly and easily. This includes running it in an isolated environment, on the operating system you designate, and including modules/components you need to ship with your scripts.
 
-Here are a few lines of PowerShell, using `Docker` commands to build and run the PowerShell Microservice on you local machine in an isolated container 
+Here are a few lines of PowerShell, using `Docker` commands to build and run the PowerShell Microservice on you local machine in an isolated container.
 
 ```powershell
 $name = "powershellmicroservice"
