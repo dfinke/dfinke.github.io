@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  PowerShell-Speaker-Roundup
+title:  PowerShell SpeakerRoundup
 date:   2021-02-06 09:00
 comments: true
-description: "PowerShell Speaker Roundup"
+description: "PowerShell-Speaker-Roundup"
 categories:
     - PowerShell,NYC Meetup, Speakers, Events
 tags:
