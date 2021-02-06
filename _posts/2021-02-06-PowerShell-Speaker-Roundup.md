@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PowerShell SpeakerRoundup
+title:  PowerShell Speaker Roundup
 date:   2021-02-06 09:00
 comments: true
 description: "PowerShell-Speaker-Roundup"
