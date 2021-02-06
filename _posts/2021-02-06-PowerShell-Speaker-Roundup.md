@@ -16,9 +16,9 @@ tags:
 
 <img src="https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/videolists.jpg" width="600" height="400" />
 
-The NYC PowerShell Meetup has been running monthly, online for a while. Check here and sign up on the [PowerShell NYC Meetup](https://www.meetup.com/NycPowershellMeetup) and see the upcoming talks.
+The NYC PowerShell Meetup has been running monthly, online for a while. Check it out, and sign up on the [PowerShell NYC Meetup](https://www.meetup.com/NycPowershellMeetup) and see the upcoming talks.
 
-Here's the list of the powerful PowerShell speakers who have been generous to present great topics. Check them out and follow them on twitter to say thank you.
+Here's the list of the powerful PowerShell speakers who have presented on great topics. Check them out and follow them on twitter.
 
 1. Follow me on Twitter [Doug Finke](https://twitter.com/dfinke)
 1. Join the [PowerShell NYC Meetup](https://www.meetup.com/NycPowershellMeetup)
