@@ -24,10 +24,7 @@ Here's the list of the powerful PowerShell speakers who have presented on great 
 1. Join the [PowerShell NYC Meetup](https://www.meetup.com/NycPowershellMeetup)
 1. Check out the [YouTube channel](https://www.youtube.com/dougfinke), subscribe and hit the notification button so you know when future videos are posted
 
-<!-- ## And Now - The Videos -->
-
 ![](/images/posts/YouTube_logo.png)
-
 
 |Who|What|Videos
 |---|---|---
