@@ -15,7 +15,7 @@ tags:
 
 ## Using the Read-Clipboard function
 
-The `Read-Clipboard` function is part of my PowerShell Excel module. You can [get it here](Install-Module -Name ImportExcel) or at a PowerShell prompt use this command to install it `Install-Module -Name ImportExcel`.
+The `Read-Clipboard` function is part of my PowerShell Excel module. You can [get it here](https://www.powershellgallery.com/packages/ImportExcel/7.2.1) or at a PowerShell prompt use this command to install it `Install-Module -Name ImportExcel`.
 
 ## Read-Clipboard the Video
 
