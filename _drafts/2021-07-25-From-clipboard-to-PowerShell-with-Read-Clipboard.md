@@ -15,7 +15,15 @@ tags:
 
 ## Using the Read-Clipboard function
 
-[Get it here]()
+The `Read-Clipboard` function is part of my PowerShell Excel module. You can [get it here](Install-Module -Name ImportExcel) or at a PowerShell prompt use this command to install it `Install-Module -Name ImportExcel`.
+
+## Read-Clipboard the Video
+
+You can also what the short video I did on it.
+
+<a href="https://youtu.be/dv2GOH5sbpA"><img src="https://img.youtube.com/vi/dv2GOH5sbpA/0.jpg" width="400"></a>
+
+## Read-Clipboard the Write Up
 
 The `Read-Clipboard` functions creates an array of object from data copied to the clipboard. It reads text from the clipboard and detects if it is a CSV (including tab delimited), or JSON format.
 
