@@ -26,8 +26,11 @@ Here's the list of the powerful PowerShell speakers who have presented on great 
 
 ![](/images/posts/YouTube_logo.png)
 
+https://youtu.be/LpxALsotCPQ
+
 |Who|What|Videos
 |---|---|---
+|[Matthew Dowst](https://twitter.com/MDowst)|PowerShell: Automate the Admin|<a href="https://youtu.be/XFNPlOkVyP0"><img src="https://img.youtube.com/vi/XFNPlOkVyP0/0.jpg" width="200"></a>
 |[Jaap Brasser](https://twitter.com/Jaap_Brasser)|Having fun with PowerShell Azure Functions|<a href="https://youtu.be/QAj6KTICTfg"><img src="https://img.youtube.com/vi/QAj6KTICTfg/0.jpg" width="200"></a>
 |[Josh King](https://twitter.com/WindosNZ)|Toast Notifications with PowerShell From Noob to Master Baker|<a href="https://youtu.be/LP_X741ULYw"><img src="https://img.youtube.com/vi/LP_X741ULYw/0.jpg" width="200"></a>
 |[James Brundage](https://twitter.com/JamesBru)|Irregular: Regular Expressions Made Strangely Simple|<a href="https://youtu.be/HKTM3CKp5jc"><img src="https://img.youtube.com/vi/HKTM3CKp5jc/0.jpg" width="200"></a>
