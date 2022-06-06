@@ -26,11 +26,16 @@ Here's the list of the powerful PowerShell speakers who have presented on great 
 
 ![](/images/posts/YouTube_logo.png)
 
-https://youtu.be/LpxALsotCPQ
 
-|Who|What|Videos
-|---|---|---
+|Who|What|Where
+|---|:---:|:---:
+|[ScriptRunner](https://www.scriptrunner.com/)|ScriptRunner – Let’s Unlock the Power of PowerShell across your organization|<a href="https://youtu.be/ywK7Qv02uoE"><img src="https://img.youtube.com/vi/ywK7Qv02uoE/0.jpg" width="200"></a>
+|[Michael Seidl](https://au2mator.com/)|PowerShell - au2mator Self Service Portal|<a href="https://youtu.be/L8zVHkw-vLs"><img src="https://img.youtube.com/vi/L8zVHkw-vLs/0.jpg" width="200"></a>
+|[Friedrich Weinmann](https://twitter.com/FredWeinmann)|PowerShell Pipelines in a (nut)Shell|<a href="https://youtu.be/QJGYzxyItyM"><img src="https://img.youtube.com/vi/QJGYzxyItyM/0.jpg" width="200"></a>
+|[Richard Benwell & Shawn Williams](https://squaredup.com/)|Visualize PowerShell data with SquaredUp|<a href="https://youtu.be/2Eipo40yNnY"><img src="https://img.youtube.com/vi/2Eipo40yNnY/0.jpg" width="200"></a>
+|[Mike Kanakos](https://twitter.com/MikeKanakos)|PowerShell Secrets Management|<a href="https://youtu.be/vEniQPooUSs"><img src="https://img.youtube.com/vi/vEniQPooUSs/0.jpg" width="200"></a>
 |[Matthew Dowst](https://twitter.com/MDowst)|PowerShell: Automate the Admin|<a href="https://youtu.be/XFNPlOkVyP0"><img src="https://img.youtube.com/vi/XFNPlOkVyP0/0.jpg" width="200"></a>
+|[Rob Sewell](https://twitter.com/sqldbawithbeard)|Think PowerShell and SQL is meh Meet dbatools!|<a href="https://youtu.be/dNZ-5XWNQtk"><img src="https://img.youtube.com/vi/dNZ-5XWNQtk/0.jpg" width="200"></a>
 |[Jaap Brasser](https://twitter.com/Jaap_Brasser)|Having fun with PowerShell Azure Functions|<a href="https://youtu.be/QAj6KTICTfg"><img src="https://img.youtube.com/vi/QAj6KTICTfg/0.jpg" width="200"></a>
 |[Josh King](https://twitter.com/WindosNZ)|Toast Notifications with PowerShell From Noob to Master Baker|<a href="https://youtu.be/LP_X741ULYw"><img src="https://img.youtube.com/vi/LP_X741ULYw/0.jpg" width="200"></a>
 |[James Brundage](https://twitter.com/JamesBru)|Irregular: Regular Expressions Made Strangely Simple|<a href="https://youtu.be/HKTM3CKp5jc"><img src="https://img.youtube.com/vi/HKTM3CKp5jc/0.jpg" width="200"></a>
