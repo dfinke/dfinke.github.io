@@ -10,6 +10,8 @@ tags:
     - PowerShell, Excel, Reports
 ---
 
+[Data collection process](https://edlatimore.com/math-concepts)
+
 Everyone wants to produce slick looking reports. Want to impress management? Use PowerShell and `Install-Module -Name ImportExcel`.
 
 Here's `Get-Process`, `Get-Service` and a `directory listing` all in one Excel spreadsheet format as a report, plus, it is interactive.
