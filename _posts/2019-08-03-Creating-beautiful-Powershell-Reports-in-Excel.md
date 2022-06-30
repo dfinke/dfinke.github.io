@@ -10,7 +10,9 @@ tags:
     - PowerShell, Excel, Reports
 ---
 
-[Data collection process](https://edlatimore.com/math-concepts)
+<!-- [Data collection process](https://edlatimore.com/math-concepts) -->
+
+<a href="https://edlatimore.com/math-concepts" target="_blank" rel="noopener">Data collection process</a>
 
 Everyone wants to produce slick looking reports. Want to impress management? Use PowerShell and `Install-Module -Name ImportExcel`.
 
