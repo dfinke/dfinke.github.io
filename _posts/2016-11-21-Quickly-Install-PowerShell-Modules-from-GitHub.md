@@ -16,7 +16,7 @@ Not all PowerShell Modules are published to the [PowerShellGallery](https://www.
 There needs to be an easy way to get the latest updates from the repo.  
 
 ## Solution
-`Install-ModuleFromGitHub`. This script works in a similar way to the PowerShell built-in cmdlet [`Install-Module`](https://msdn.microsoft.com/powershell/reference/5.1/PowerShellGet/Install-Module). It streamlines the multi-step process of downloading the zip from GitHub, unblocking it, unzipping it and copying it to a well known module directory. It also checks for a 'psd1' file, cracks is open and uses the `ModuleVersion` to create a directory for it to copy the bits to.
+`Install-ModuleFromGitHub`. This script works in a similar way to the PowerShell built-in cmdlet [`Install-Module`](https://msdn.microsoft.com/powershell/reference/5.1/PowerShellGet/Install-Module). It streamlines the multi-step process of downloading the zip from GitHub, unblocking it, unzipping it and copying it to a well known module directory. It also checks for a 'psd1' file, cracks it open and uses the `ModuleVersion` to create a directory for it to copy the bits to.
 
 ## In Action
 ![](https://github.com/dfinke/InstallModuleFromGitHub/blob/master/media/InstallFromGitHub.gif?raw=true)
