@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Interactive Plotting with PowerSheLL and Polyglot Interactive Notebooks
+title:  Interactive Plotting with PowerShell and Polyglot Interactive Notebooks
 date:   2022-12-28 09:00
 comments: true
-description: "Interactive-Plotting-with-PowerSheLL-and-Polyglot-Interactive-Notebooks"
+description: "Interactive-Plotting-with-PowerShell-and-Polyglot-Interactive-Notebooks"
 categories:
     - PowerShell, Polyglot, Interactive Notebooks, ScottPlot
 tags:
