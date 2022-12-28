@@ -18,7 +18,8 @@ Uses Polyglot Interactive Notebooks to demonstrate the capabilities of ScottPlot
 
 Is a free and [open-source plotting library](https://scottplot.net/) for .NET that makes it easy to interactively display large datasets.
 
-![](../images/posts/ScottPlot/ScottPlot.png)
+![](/images/posts/ScottPlot/ScottPlot.png)
+
 
 ## How to run
 
@@ -48,6 +49,6 @@ There are two helper PowerShell scripts.
 
 Check out the rendered notebook and charts in [nbviewer](https://nbviewer.org/github/dfinke/PowerShellScottPlot/blob/master/ScottPlot.ipynb).
 
-![](../images/posts/ScottPlot/RadialChart.png)
+![](/images/posts/ScottPlot/RadialChart.png)
 
-![](../images/posts/ScottPlot/SignalChart.png)
+![](/images/posts/ScottPlot/SignalChart.png)
