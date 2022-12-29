@@ -14,7 +14,7 @@ tags:
 
 Uses Polyglot Interactive Notebooks to demonstrate the capabilities of ScottPlot via PowerShell.
 
-*Repo*: https://github.com/dfinke/PowerShellScottPlot
+*Repo*: [https://github.com/dfinke/PowerShellScottPlot](https://github.com/dfinke/PowerShellScottPlot)
 
 ## ScottPlot
 
