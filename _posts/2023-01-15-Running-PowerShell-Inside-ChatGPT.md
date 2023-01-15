@@ -26,7 +26,7 @@ $b = 18
 ($a, $b, ($a+$b), ($a-$b))
 ```
 
-![](../images/posts/ChatGPT/ChatGPTKnowPowerShell.png)
+![](/images/posts/ChatGPT/ChatGPTKnowPowerShell.png)
 
 ## Chat #2
 
@@ -37,11 +37,11 @@ $d = Get-Date
 $d.AddDays(5)
 ```
 
-![](../images/posts/ChatGPT/ChatGPTKnowPowerShell-Date.png)
+![](/images/posts/ChatGPT/ChatGPTKnowPowerShell-Date.png)
 
 # Introducing the PowerShellAI Module
 
-![](../images/posts/ChatGPT/AIReplace.png)
+![](/images/posts/ChatGPT/AIReplace.png)
 
 # Unleash the Power of Artificial Intelligence with PowerShell
 
