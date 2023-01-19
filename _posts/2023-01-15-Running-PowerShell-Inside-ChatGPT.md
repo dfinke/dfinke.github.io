@@ -57,7 +57,7 @@ You need to provide an API key for the OpenAI API in order to use the module. Yo
 Set your key to this environment variable:
 
 ```powershell
-$env:OPENAI_API_KEY = "YOUR_API_KEY"
+$env:OpenAIKey = "YOUR_API_KEY"
 ```
 
 ## Install the PowerShellAI Module
