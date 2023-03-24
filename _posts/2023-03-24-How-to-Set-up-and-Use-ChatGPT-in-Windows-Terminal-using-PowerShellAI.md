@@ -134,7 +134,7 @@ There is another function `copilot` that can be used to interact with ChatGPT. I
 copilot "using PowerShell regex, just code. split user from domain of email address with match:  demo.user@google.com" 
 ```
 
-![image](../images/posts/ChatGPT/Copilot-GPT-At-The-CLI.png)
+![image](/images/posts/ChatGPT/Copilot-GPT-At-The-CLI.png)
 
 ## Conclusion
 
