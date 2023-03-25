@@ -12,7 +12,7 @@ tags:
 
 # How to Set up and Use ChatGPT in Windows Terminal using PowerShellAI
 
-![](../images/posts/ChatGPT/unsplashChatGPT.jpg)
+![](/images/posts/ChatGPT/unsplashChatGPT.jpg)
 ## Introduction
 
 ChatGPT is a powerful language model developed by OpenAI. It has been widely used in various applications, including chatbots, text completion, and language understanding. It powers GitHub Copilot, a code completion tool that helps developers write code faster. It also powers the Microsoft 365.
