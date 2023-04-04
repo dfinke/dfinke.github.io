@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  PowerShellAI Chat Conversation
-date:   2023-03-30 09:00
+title:  PowerShellAI ChatGPT Conversation Mode
+date:   2023-04-04 15:00
 comments: true
-description: "PowerShellAI-Chat-Conversation"
+description: "PowerShellAI-ChatGPT-Conversation-Mode"
 categories:
     - PowerShellAI, PowerShell, ChatGPT
 tags:
