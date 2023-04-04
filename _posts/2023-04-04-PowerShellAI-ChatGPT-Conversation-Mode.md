@@ -26,6 +26,9 @@ The ChatGPT and GPT-4 models are language models that are optimized for conversa
 
 To work with this you can use the function/alias `New-Chat` and `Chat`.
 
+Download it now: Install-Module -Name PowerShellAI
+More details and videos: https://github.com/dfinke/PowerShellAI
+
 ## Video Tutorial
 
 Discover the power of AI in your PowerShell environment with this newly integrated GPT-4 chat feature, as demonstrated in this step-by-step YouTube tutorial, revolutionizing automation and productivity.
