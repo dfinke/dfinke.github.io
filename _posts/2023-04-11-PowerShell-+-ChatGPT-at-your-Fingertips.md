@@ -12,6 +12,8 @@ tags:
 
 # PowerShell + ChatGPT at your Fingertips! ✨
 
+![Alt text](/images/posts/ChatGPT/Azure+ChatGPT.jpg)
+
 ## Check out the video
 
 > PowerShellAI Meets Azure OpenAI Service: ChatGPT Integration
