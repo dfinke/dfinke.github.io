@@ -10,7 +10,7 @@ tags:
     - PowerShell, PowerShellAI, OpenAI, Azure OpenAI, GPT-4, ChatGPT
 ---
 
-![](../images/posts/ChatGPT/FixingJSON.jpg)
+![](images/posts/ChatGPT/FixingJSON.jpg)
 
 # Fixing JSON Syntax Errors with the PowerShellAI Module
 
