@@ -69,6 +69,6 @@ Now, you can integrate this powerful AI-powered JSON syntax fixing capability in
 
 # Additional Resources:
 
-- PowerShellAI Details and Videos: https://github.com/dfinke/PowerShellAI
+- PowerShellAI Details and Videos: [https://github.com/dfinke/PowerShellAI](https://github.com/dfinke/PowerShellAI)
 - [How to Set up and Use ChatGPT in Windows Terminal using PowerShellAI](https://dfinke.github.io/powershellai,%20powershell,%20chatgpt,%20windows%20terminal/2023/03/24/How-to-Set-up-and-Use-ChatGPT-in-Windows-Terminal-using-PowerShellAI.html)
 - [PowerShell + ChatGPT at your Fingertips!](https://dfinke.github.io/powershell,%20powershellai,%20openai,%20azure%20openai/2023/04/11/PowerShell-+-ChatGPT-at-your-Fingertips.html)
