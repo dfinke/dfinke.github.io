@@ -13,7 +13,7 @@ tags:
 # Excel Tables and PowerShell Import-Excel
 
 The PowerShell ImportExcel module can create Excel Tables. You can apply table styles, add a totals row, and use structured references to include values from the table in formulae.
-
+ 
 To create a table you'll need a list of data. The fields of the instances will become columns in the table.
 
 Let's start with a small dataset containing the contributions to UK electricity generation by various classes of energy source.
