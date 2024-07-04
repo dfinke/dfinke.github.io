@@ -9,7 +9,9 @@ categories:
 tags:
     - PowerShell, Design Patterns, GenAI
 ---
- 
+
+![alt text](/images/posts/DesignPatterns/00-Mediator-Image.png)
+
 # Mediator Design Pattern in PowerShell  
 
 The Mediator Design Pattern centralizes communication, reducing dependencies & improving maintainability. Instead of direct interactions, objects use a mediator. 
