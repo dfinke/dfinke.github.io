@@ -26,7 +26,7 @@ PSAI is a PowerShell module that provides access to OpenAI large Language Models
 
 Check out the [PSAI GitHub](https://github.com/dfinke/PSAI) and please give it a star 🌟
 
-Coming soon, PSAIAgent, a PowerShell module that provides access to OpenAI large Language Models (LLMs) and the ability to create agents that can work autonomously or interact with the you.
+Coming soon, PSAIAgent, a PowerShell module that provides access to OpenAI large Language Models (LLMs) and the ability to create agents that can work autonomously or interact with you.
 
 <html>
 <head>
