@@ -56,7 +56,6 @@ Coming soon, PSAIAgent, a PowerShell module that provides access to OpenAI large
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto repeat(3, 1fr);
             gap: 10px;
-            resize: horizontal;
             overflow: hidden;
             /* Prevent content from causing overflow */
         }
