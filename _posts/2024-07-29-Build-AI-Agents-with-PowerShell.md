@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Build AI Agents with PowerShell"
-date: 2024-07-03 09:00
+date: 2024-07-29 09:00
 comments: true
 description: "Build-AI-Agents-with-PowerShell"
 categories: 
