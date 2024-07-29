@@ -33,6 +33,13 @@ Coming soon, PSAIAgent, a PowerShell module that provides access to OpenAI large
     <title>Interactive Code Panel</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet" /> 
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
         .container {
             display: flex;
             width: 100%;
@@ -252,6 +259,4 @@ Write-Host "Stay tuned for updates and enhancements!"
         }
     </script>
 </body>
-
 </html>    
-</html>
