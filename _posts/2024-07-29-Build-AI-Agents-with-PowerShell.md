@@ -16,7 +16,7 @@ tags:
 
 Turn any OpenAI LLM into an AI agent that can interact with you or work autonomously.
 
-Building AI workflows using function calling in PowerShell is the next step.
+Building AI workflows using function calling, and more, using PowerShell, is the next step.
 
 ## PSAI and PSAIAgent
 
