@@ -10,7 +10,9 @@ tags:
     - PowerShell, AI, Agents
 ---
 
-## Build AI Agents with PowerShell
+<p align="center">
+    <img src="/images/posts/AI-Agent-and-PowerShell-Interface.png" alt="AI Agent and PowerShell Interface" width="400px">
+</p>
 
 Turn any OpenAI LLM into an AI agent that can interact with you or work autonomously.
 
