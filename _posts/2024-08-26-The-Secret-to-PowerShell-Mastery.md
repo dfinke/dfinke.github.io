@@ -61,6 +61,8 @@ Because sometimes, **the difference between the ordinary and the extraordinary i
 **About Doug Finke**
 Doug Finke isn’t just another PowerShell expert. As a 15-time Microsoft MVP and author of *PowerShell for Developers*, he’s been at the forefront of innovation, helping professionals like you push the boundaries of what’s possible.
 
+<br/>
+
 ---
 
 **Stay Connected:**
