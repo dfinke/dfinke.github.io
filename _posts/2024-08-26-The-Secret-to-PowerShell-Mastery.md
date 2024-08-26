@@ -56,6 +56,8 @@ This is where you transform from a PowerShell expert into a PowerShell visionary
 
 Because sometimes, **the difference between the ordinary and the extraordinary is just one click.**
 
+<br/>
+
 ---
 
 **About Doug Finke**
