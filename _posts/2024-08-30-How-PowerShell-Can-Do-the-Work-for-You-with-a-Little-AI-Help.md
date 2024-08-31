@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How PowerShell Can Do the Work for You with a Little AI Help"
-date: 2024-08-30 09:00:00
+date: 2024-08-30 06:30:00
 comments: true
 description: "How-PowerShell-Can-Do-the-Work-for-You-with-a-Little-AI-Help"
 categories: 
