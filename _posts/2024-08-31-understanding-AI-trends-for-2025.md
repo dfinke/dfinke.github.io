@@ -44,4 +44,4 @@ The developments leading up to 2025 indicate a world where AI becomes increasing
 - [YouTube Video: How AI Will Change Our Lives by 2025](https://youtu.be/j4prKu3MvrQ)
 - [AI Development: Key Trends and Predictions for 2025](https://wetal.com/en/blog/ai-development-key-trends-and-predictions-for-2025)
 - [California's AI safety bill heads to governor](https://calmatters.org/economy/technology/2024/08/ai-safety-bill-california-legislature/)
-- [California Bill Proposes Regulating AI at State Level | TIME](https://time.com/6313588/california-ai-regulation-bill/)
+- [California Bill Proposes Regulating AI at State Level](https://time.com/6313588/california-ai-regulation-bill/)
