@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Harnessing Attention with PowerShell and AI: A Journey Through 'Get-WhatIWorkedOn'"
-date: 2024-09-15 09:00:00 -0400
+date: 2024-09-15 12:00:00 -0400
 categories: [PowerShell, AI, Productivity]
 ---
 
@@ -14,6 +14,16 @@ Hello friends,
 In a world buzzing with endless distractions, capturing and retaining attention is both an art and a science. Today, I invite you on a journey through my latest experiment—a PowerShell function called `Get-WhatIWorkedOn`. This tool has transformed how I reflect on my work, blending the precision of code with the insights of artificial intelligence.
 
 But first, let's pause. Imagine sifting through countless files, scripts, and notes scattered across your digital landscape. Overwhelming, isn't it? That's where our story begins.
+
+## A Visual Walkthrough
+
+To give you a more in-depth understanding, I've created a video walkthrough where I demonstrate how the `Get-WhatIWorkedOn` function works and how I integrate AI into the process. You can watch it here:
+
+<div style="text-align: center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0Bf0iPCiLQA" frameborder="0" allowfullscreen></iframe>
+</div>
+
+*[Click here if the video doesn't load.](https://youtu.be/0Bf0iPCiLQA)*
 
 ## The Challenge of Memory in a Digital World
 
