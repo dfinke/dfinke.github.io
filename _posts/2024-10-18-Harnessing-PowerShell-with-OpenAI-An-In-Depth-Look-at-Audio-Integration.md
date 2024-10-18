@@ -80,3 +80,4 @@ The provided script exemplifies a practical blend of PowerShell's functionality 
 
 ## References
 - [PowerShell module for OpenAI API. PSAI - GitHub](https://github.com/dfinke/PSAI)
+- [OpenAI Audio Generation](https://platform.openai.com/docs/guides/audio/audio-generation)
