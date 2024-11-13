@@ -19,11 +19,9 @@ tags:
 <br/>
 <br/>
 
-# Introducing a Custom 'map' Function in PowerShell for Functional Programming
-
 As developers, we're always looking for ways to write cleaner, more efficient code. One of the paradigms that facilitate this is functional programming, which emphasizes the use of functions and immutability. While PowerShell is primarily an object-oriented scripting language, it also supports functional programming concepts. Recently, I implemented a custom `map` function in PowerShell to process multiple arrays in a functional style. In this blog post, I'll walk you through the implementation and show you how it can be used to simplify your data processing tasks.
 
-## The Need for a `map` Function in PowerShell
+## The Need for a 'map' Function in PowerShell
 
 In languages like Python and JavaScript, the `map` function is a staple for transforming data collections. It applies a given function to each item of a list and returns a list of the results. While PowerShell has cmdlets like `ForEach-Object`, they don't natively support mapping over multiple arrays simultaneously. To bridge this gap, I created a custom `map` function that can apply a function to multiple arrays in parallel.
 
