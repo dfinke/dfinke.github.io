@@ -11,14 +11,14 @@ tags:
     - PowerShell PSAI   
 ---
 
-<!-- 
+
 <div style="text-align: center;">
-    <img src="https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/Introducing-a-Custom-map-Function-in-PowerShell-for-Functional-Programming.png" width="300" height="300" />
+    <img src="https://raw.githubusercontent.com/dfinke/dfinke.github.io/master/images/posts/Leverage-AI-PowerShell/00-Leverage-AI-PowerShell.png" width="400" height="300" />
 </div>
 
 <br/>
 <br/>
--->
+
 
 ## Introduction
 In today’s fast-paced IT landscape, automation is no longer a luxury but a necessity. As PowerShell continues to be the backbone of Windows administration, integrating artificial intelligence (AI) into scripting can significantly enhance productivity. Enter PSAI, the PowerShell AI module—a powerful tool that streamlines automation, scripting, and command execution using AI-driven assistance.
