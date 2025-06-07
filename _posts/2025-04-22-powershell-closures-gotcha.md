@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PowerShell Quiz: Understanding Closures in Loops"
-date: 2025-04-22 09:30:00
+date: 2025-04-23 06:30:00
 comments: true
 description: "PowerShell-Quiz-Understanding-Closures-in-Loops"
 categories: 
