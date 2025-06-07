@@ -8,7 +8,7 @@ description: "One Idea, One Prompt — Watching GitHub Copilot Work in Real Time
 ---
 
 <p align="center">
-    <img src="../images/posts/GitHubActionsHeader.png" alt="alt text" width="350" />
+    <img src="/images/posts/GitHubActionsHeader.png" alt="alt text" width="350" />
 </p>
 
 # One Idea, One Prompt — Watching GitHub Copilot Code Agent Work in Real Time
@@ -59,7 +59,7 @@ I plugged in my repo name and a token, saved, and it ran.
 
 And it just worked.
 
-![alt text](../images/posts/GitHubStatusDashboard.png)
+![alt text](/images/posts/GitHubStatusDashboard.png)
 * PRs are listed on the left.
 * Workflow runs on the right.
 * Auto-refreshes every 15 seconds.
