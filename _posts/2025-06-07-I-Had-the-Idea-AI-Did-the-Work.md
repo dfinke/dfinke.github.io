@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I Had the Idea. AI Did the Work"
-date: 2025-06-08 09:00:00
+date: 2025-06-07 09:00:00
 categories: ai events trends
 tags: [AI, events, trends, mcp, powershell]
 description: "One Idea, One Prompt — Watching GitHub Copilot Work in Real Time"
