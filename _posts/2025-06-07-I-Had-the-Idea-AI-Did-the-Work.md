@@ -94,6 +94,18 @@ This is barely day one.
 Agents aren’t just coding—they’re reshaping the workflows around code.
 And we’re just getting started.
 
+## Get the Code
+
+Want to try this dashboard yourself? I've made the code available in my GitHub repository: [github-status-dashboard](https://github.com/dfinke/github-status-dashboard). Feel free to fork it, modify it, and make it your own.
+
+To get started:
+1. Clone the repository
+2. Add your GitHub token
+3. Update the repository name
+4. Open the HTML file in your browser
+
+The code is intentionally simple and straightforward - exactly as it was generated from the prompt. It serves as a great starting point for your own customizations and improvements.
+
 ----
 ## Connect with Me
 
