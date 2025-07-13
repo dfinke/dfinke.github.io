@@ -8,7 +8,7 @@ description: "The world of cloud automation is changing fast. Discover how Model
 ---
 
 <p align="center">
-    <img src="../images/posts/MCP-Servers-And-Integrations.png" alt="MCP Servers and Integrations" width="300" />
+    <img src="/images/posts/MCP-Servers-And-Integrations.png" alt="MCP Servers and Integrations" width="300" />
 </p>
 
 Imagine a world where you can seamlessly integrate AI with your cloud infrastructure—no complex setup, no extensive coding. Thanks to Model Context Protocols (MCPs), that world is becoming a reality. 
