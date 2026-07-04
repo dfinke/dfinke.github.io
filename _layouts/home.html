@@ -6,6 +6,12 @@ layout: default
 {% assign featured = posts.first %}
 
 <div class="magazine-home">
+  <section class="magazine-masthead" aria-label="Site introduction">
+    <p class="magazine-kicker">PowerShell / AI / Automation</p>
+    <h1>Practical engineering notes for people who automate the work.</h1>
+    <p>Field notes, patterns, demos, and working examples from Doug Finke.</p>
+  </section>
+
   {% if featured %}
   <section class="magazine-hero" aria-label="Featured article">
     <div class="magazine-hero__copy">
@@ -26,7 +32,7 @@ layout: default
           {{ featured.excerpt | strip_html | strip_newlines | truncate: 240 }}
         {% endif %}
       </p>
-      <a class="magazine-read-more" href="{{ featured.url | relative_url }}">Read article</a>
+      <a class="magazine-read-more" href="{{ featured.url | relative_url }}">Read the featured article</a>
     </div>
     <a class="magazine-hero__media" href="{{ featured.url | relative_url }}" aria-label="{{ featured.title | escape }}">
       {% if featured.image %}
