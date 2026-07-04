@@ -5,6 +5,7 @@ date: 2025-10-05 09:00:00
 categories: powershell ai agents function-calling
 tags: [PowerShell, AI Agents, Function Calling, Agent Framework, Automation, APIs]
 description: "Stop building chatbots that just talk. Learn how to create AI agents that can execute real PowerShell functions, interact with APIs, and automate your workflows with just 7 lines of code."
+image: /images/posts/AgentFrameworkDemo/Sweater-Umbrella.png
 ---
 
 ## What if Your AI Agent Could Actually Execute Commands?

@@ -4,6 +4,7 @@ title: The Evolution of Search Engines From Archie to OpenAI Search
 date:   2024-11-01 07:00
 comments: true
 description: The story of search engines is a journey of constant innovation and transformation. Let's explore the evolution from Archie to OpenAI Search.
+image: /images/posts/The-Evolution-of-Search-Engines-From-Archie-to-OpenAI-Search.png
 categories:
     - Search Engines
     - Archie

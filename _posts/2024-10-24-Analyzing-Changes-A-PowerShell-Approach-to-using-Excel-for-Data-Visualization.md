@@ -4,6 +4,7 @@ title: Analyzing Monthly Changes A PowerShell Approach to Data Visualization
 date:   2024-10-24 07:00
 comments: true
 description: This article explores how PowerShell can be used to visualize monthly data changes through Excel, emphasizing its applications in data analysis.
+image: /images/posts/Analyzing-Monthly-Changes-A-PowerShell-Approach-to-Data Visualization.png
 categories:
     - PowerShell
     - Data Visualization

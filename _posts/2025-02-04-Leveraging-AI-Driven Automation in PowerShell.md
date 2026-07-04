@@ -4,6 +4,7 @@ title: Leveraging AI-Driven Automation in PowerShell
 date:   2025-02-04 07:00
 comments: true
 description: Leveraging AI-Driven Automation in PowerShell
+image: /images/posts/Leverage-AI-PowerShell/00-Leverage-AI-PowerShell.png
 
 categories:
     - PowerShell PSAI

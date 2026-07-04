@@ -4,6 +4,7 @@ title: Introducing a Custom 'map' Function in PowerShell for Functional Programm
 date:   2024-11-13 05:00
 comments: true
 description: PowerShell's custom map function enables functional programming, processing multiple arrays with ease. Simplify your scripts by applying transformations in parallel.
+image: /images/posts/Introducing-a-Custom-map-Function-in-PowerShell-for-Functional-Programming.png
 
 categories:
     - Search Engines    

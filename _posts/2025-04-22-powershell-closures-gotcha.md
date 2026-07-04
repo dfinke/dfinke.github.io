@@ -4,6 +4,7 @@ title: "PowerShell Quiz: Understanding Closures in Loops"
 date: 2025-04-23 06:30:00
 comments: true
 description: "PowerShell-Quiz-Understanding-Closures-in-Loops"
+image: /images/posts/2025-04-22-powershell-closures-gotcha.png
 categories: 
     - PowerShell, Closures, Scripting, Quiz
 tags: 

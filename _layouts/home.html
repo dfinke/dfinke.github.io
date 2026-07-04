@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+{% assign posts = site.posts %}
+{% assign featured = posts.first %}
+
+<div class="magazine-home">
+  {% if featured %}
+  <section class="magazine-hero" aria-label="Featured article">
+    <div class="magazine-hero__copy">
+      <p class="magazine-kicker">Featured</p>
+      <h1 class="magazine-hero__title">
+        <a href="{{ featured.url | relative_url }}">{{ featured.title | escape }}</a>
+      </h1>
+      <p class="magazine-meta">
+        <time datetime="{{ featured.date | date_to_xmlschema }}">{{ featured.date | date: "%b %-d, %Y" }}</time>
+        {% if featured.categories.size > 0 %}
+        <span>{{ featured.categories | join: " / " }}</span>
+        {% endif %}
+      </p>
+      <p class="magazine-hero__excerpt">
+        {% if featured.description %}
+          {{ featured.description | strip_html | strip_newlines }}
+        {% else %}
+          {{ featured.excerpt | strip_html | strip_newlines | truncate: 240 }}
+        {% endif %}
+      </p>
+      <a class="magazine-read-more" href="{{ featured.url | relative_url }}">Read article</a>
+    </div>
+    <a class="magazine-hero__media" href="{{ featured.url | relative_url }}" aria-label="{{ featured.title | escape }}">
+      {% if featured.image %}
+      <img src="{{ featured.image | relative_url }}" alt="{{ featured.title | escape }}">
+      {% else %}
+      <div class="magazine-hero__placeholder">
+        <span>{{ featured.categories.first | default: "PowerShell" }}</span>
+      </div>
+      {% endif %}
+    </a>
+  </section>
+  {% endif %}
+
+  <section class="magazine-section" aria-labelledby="recent-posts">
+    <div class="magazine-section__heading">
+      <p class="magazine-kicker">Latest</p>
+      <h2 id="recent-posts">Recent Articles</h2>
+    </div>
+
+    <div class="magazine-grid">
+      {% for post in posts offset:1 limit:8 %}
+      <article class="magazine-card">
+        {% if post.image %}
+        <a class="magazine-card__media" href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }}">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}">
+        </a>
+        {% endif %}
+        <div class="magazine-card__body">
+          <p class="magazine-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+            {% if post.categories.size > 0 %}
+            <span>{{ post.categories.first }}</span>
+            {% endif %}
+          </p>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+          <p>
+            {% if post.description %}
+              {{ post.description | strip_html | strip_newlines | truncate: 150 }}
+            {% else %}
+              {{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}
+            {% endif %}
+          </p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="magazine-section magazine-archive" aria-labelledby="archive-posts">
+    <div class="magazine-section__heading">
+      <p class="magazine-kicker">Archive</p>
+      <h2 id="archive-posts">More From The Blog</h2>
+    </div>
+
+    <ol class="magazine-archive__list">
+      {% for post in posts offset:9 %}
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+</div>

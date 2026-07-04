@@ -5,6 +5,7 @@ date: 2025-06-10 09:00:00
 categories: ai copilot vscode dashboards
 tags: [AI, GitHub Copilot, VS Code, dashboards, chatMode, productivity]
 description: "How to create a custom dashboard-generating AI assistant in VS Code using GitHub Copilot Chat's chatMode.md feature."
+image: /images/posts/dashboardBot.png
 ---
 
 
