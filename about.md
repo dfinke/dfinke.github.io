@@ -6,6 +6,8 @@ permalink: /about/
 
 Doug Finke is focused on delivering software faster with more quality, using automation across different platforms and cloud providers.
 
+Agentic AI Forge is Doug's premium community for builders working on agentic systems, software factories, harnesses, orchestration, and practical AI engineering.
+
 - Author ["PowerShell for Developers"](https://www.amazon.com/Windows-PowerShell-Developers-Productivity-Application/dp/1449322700)
 - [Microsoft MVP since 2009](https://mvp.microsoft.com/en-us/PublicProfile/4025074?fullName=Doug%20Charles%20Finke)
 
