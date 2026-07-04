@@ -76,10 +76,10 @@ body {
 .magazine-masthead {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
-  gap: 28px;
+  gap: 22px;
   align-items: end;
-  padding: 30px 34px 24px;
-  border-bottom: 8px solid var(--mag-rule);
+  padding: 22px 34px 18px;
+  border-bottom: 4px solid var(--mag-rule);
   background:
     linear-gradient(135deg, rgba(0, 122, 120, 0.16), transparent 36%),
     linear-gradient(315deg, rgba(199, 72, 45, 0.18), transparent 34%),
@@ -92,12 +92,12 @@ body {
 
 .magazine-masthead h1 {
   margin: 0;
-  max-width: 820px;
+  max-width: 760px;
   color: var(--mag-ink);
-  font-size: clamp(2.25rem, 5.6vw, 4.8rem);
+  font-size: clamp(1.65rem, 3.2vw, 3rem);
   font-weight: 900;
-  letter-spacing: -0.02em;
-  line-height: 0.96;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
 }
 
 .magazine-masthead p:last-child {
@@ -105,7 +105,7 @@ body {
   max-width: 340px;
   color: var(--mag-muted);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.05rem;
+  font-size: 0.94rem;
   font-weight: 700;
   line-height: 1.45;
 }
@@ -153,8 +153,8 @@ body {
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
-  min-height: 430px !important;
-  padding: 36px !important;
+  min-height: 360px !important;
+  padding: 30px !important;
   border-right: 2px solid var(--mag-rule) !important;
   background: #fbfaf6 !important;
 }
@@ -162,7 +162,7 @@ body {
 .magazine-hero__title {
   margin: 0 0 20px !important;
   color: var(--mag-ink) !important;
-  font-size: clamp(2rem, 4.2vw, 3.9rem) !important;
+  font-size: clamp(1.7rem, 3.4vw, 3.1rem) !important;
   font-weight: 900 !important;
   letter-spacing: -0.02em !important;
   line-height: 1.02 !important;
@@ -218,7 +218,7 @@ body {
 .magazine-hero__media {
   order: -1 !important;
   display: block !important;
-  min-height: 430px !important;
+  min-height: 360px !important;
   overflow: hidden !important;
   background: #151922 !important;
 }
@@ -226,14 +226,14 @@ body {
 .magazine-hero__media img {
   width: 100% !important;
   height: 100% !important;
-  min-height: 430px !important;
+  min-height: 360px !important;
   object-fit: cover !important;
   filter: saturate(1.08) contrast(1.04) !important;
 }
 
 .magazine-hero__placeholder {
   display: grid !important;
-  min-height: 430px !important;
+  min-height: 360px !important;
   place-items: center !important;
   padding: 32px !important;
   background: #151922 !important;
