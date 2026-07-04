@@ -1,14 +1,38 @@
 :root {
   --mag-ink: #111827;
-  --mag-paper: #ffffff;
-  --mag-sheet: #ffffff;
+  --mag-paper: #f7f3ea;
+  --mag-sheet: #fffaf0;
   --mag-muted: #6b7280;
-  --mag-rule: #e5e7eb;
-  --mag-soft-rule: #eef0f3;
+  --mag-rule: #e4ded3;
+  --mag-soft-rule: #eee7da;
   --mag-accent: #2563eb;
   --mag-accent-2: #2563eb;
-  --mag-code: #f8fafc;
+  --mag-code: #f3efe7;
+  --mag-subtle: #fbf6ec;
+  --mag-quote: #f4efe6;
+  --mag-code-ink: #1f2937;
+  --mag-pre-bg: #111827;
+  --mag-image-bg: #fffaf0;
   --mag-shadow: none;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --mag-ink: #e5e7eb;
+  --mag-paper: #0f172a;
+  --mag-sheet: #111827;
+  --mag-muted: #9ca3af;
+  --mag-rule: #243044;
+  --mag-soft-rule: #1f2937;
+  --mag-accent: #60a5fa;
+  --mag-accent-2: #60a5fa;
+  --mag-code: #1f2937;
+  --mag-subtle: #151f31;
+  --mag-quote: #172033;
+  --mag-code-ink: #dbeafe;
+  --mag-pre-bg: #020617;
+  --mag-image-bg: #111827;
+  color-scheme: dark;
 }
 
 html {
@@ -55,6 +79,50 @@ body {
   font-weight: 500 !important;
   letter-spacing: 0 !important;
   text-transform: none !important;
+}
+
+.site-nav .trigger {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 9px;
+  border: 1px solid var(--mag-rule);
+  border-radius: 999px;
+  background: var(--mag-subtle);
+  color: var(--mag-muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  line-height: 1.3;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  border-color: var(--mag-accent);
+  color: var(--mag-accent);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--mag-accent);
+  outline-offset: 2px;
+}
+
+.theme-toggle__icon {
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 999px;
+  background: var(--mag-accent);
+  box-shadow: inset -3px -3px 0 rgba(255, 255, 255, 0.42);
+}
+
+html[data-theme="dark"] .theme-toggle__icon {
+  box-shadow: inset 3px -3px 0 rgba(15, 23, 42, 0.88);
 }
 
 .wrapper {
@@ -143,7 +211,7 @@ body {
   min-height: auto !important;
   padding: 24px 0 !important;
   border-right: 0 !important;
-  background: #fbfaf6 !important;
+  background: var(--mag-subtle) !important;
 }
 
 .magazine-hero__title {
@@ -176,7 +244,7 @@ body {
 
 .magazine-hero__excerpt {
   max-width: 62ch !important;
-  color: #29313a !important;
+  color: var(--mag-muted) !important;
   font-family: inherit !important;
   font-size: 0.98rem !important;
   font-weight: 400 !important;
@@ -207,7 +275,7 @@ body {
   display: none !important;
   min-height: 360px !important;
   overflow: hidden !important;
-  background: #151922 !important;
+  background: var(--mag-pre-bg) !important;
 }
 
 .magazine-hero__media img {
@@ -273,7 +341,7 @@ body {
   aspect-ratio: 16 / 10 !important;
   overflow: hidden !important;
   border-bottom: 2px solid var(--mag-rule) !important;
-  background: #151922 !important;
+  background: var(--mag-pre-bg) !important;
 }
 
 .magazine-card__media img {
@@ -356,7 +424,7 @@ body {
 
 .magazine-post__dek {
   max-width: 70ch !important;
-  color: #29313a !important;
+  color: var(--mag-muted) !important;
   font-family: inherit !important;
   font-size: 1.02rem !important;
   font-weight: 400 !important;
@@ -364,7 +432,7 @@ body {
 }
 
 .magazine-post__content {
-  color: #252a31 !important;
+  color: var(--mag-ink) !important;
   font-family: inherit !important;
   font-size: 1rem !important;
   line-height: 1.68 !important;
@@ -404,22 +472,22 @@ body {
   margin-left: 0 !important;
   padding: 14px 18px !important;
   border-left: 3px solid var(--mag-accent) !important;
-  background: #f8fafc !important;
-  color: #374151 !important;
+  background: var(--mag-quote) !important;
+  color: var(--mag-muted) !important;
   font-style: normal !important;
 }
 
 .magazine-post__content code {
   padding: 0.12em 0.32em !important;
-  border: 1px solid #e5e7eb !important;
+  border: 1px solid var(--mag-rule) !important;
   background: var(--mag-code) !important;
-  color: #1f2937 !important;
+  color: var(--mag-code-ink) !important;
 }
 
 .magazine-post__content pre,
 .magazine-post__content .highlight {
   border: 1px solid var(--mag-rule) !important;
-  background: #111827 !important;
+  background: var(--mag-pre-bg) !important;
 }
 
 .magazine-post__content pre code {
@@ -434,7 +502,7 @@ body {
   height: auto !important;
   margin: 28px auto !important;
   border: 1px solid var(--mag-rule) !important;
-  background: #fff !important;
+  background: var(--mag-image-bg) !important;
   box-shadow: var(--mag-shadow) !important;
 }
 
@@ -457,7 +525,7 @@ body {
 }
 
 .magazine-post__content th {
-  background: #f8fafc !important;
+  background: var(--mag-subtle) !important;
   color: var(--mag-ink) !important;
   font-weight: 650 !important;
 }

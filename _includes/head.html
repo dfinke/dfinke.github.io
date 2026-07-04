@@ -2,6 +2,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      var key = "dfinke-theme";
+      var saved = null;
+      try {
+        saved = localStorage.getItem(key);
+      } catch (error) {}
+
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var theme = saved || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/magazine.css" | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M%S" }}">
@@ -9,4 +22,5 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
+  <script defer src="{{ "/assets/theme-toggle.js" | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M%S" }}"></script>
 </head>
