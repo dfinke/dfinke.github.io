@@ -82,7 +82,8 @@ body {
 }
 
 .site-nav .nav-trigger,
-.site-nav label[for="nav-trigger"] {
+.site-nav label[for="nav-trigger"],
+.site-nav .menu-icon {
   display: none !important;
 }
 
@@ -596,6 +597,12 @@ html[data-theme="dark"] .theme-toggle__icon {
     flex: 0 0 auto !important;
     float: none !important;
     position: static !important;
+    right: auto !important;
+    top: auto !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    text-align: left !important;
     line-height: 1 !important;
   }
 
