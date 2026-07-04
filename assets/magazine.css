@@ -81,10 +81,21 @@ body {
   text-transform: none !important;
 }
 
+.site-nav .nav-trigger,
+.site-nav label[for="nav-trigger"] {
+  display: none !important;
+}
+
 .site-nav .trigger {
   display: inline-flex !important;
   align-items: center !important;
   gap: 14px !important;
+  position: static !important;
+  width: auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .theme-toggle {
@@ -565,7 +576,51 @@ html[data-theme="dark"] .theme-toggle__icon {
 
 @media (max-width: 600px) {
   .site-header .wrapper {
-    display: block !important;
+    display: flex !important;
+    gap: 12px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .site-title,
+  .site-title:visited {
+    min-width: 0 !important;
+    max-width: calc(100% - 132px) !important;
+    font-size: 1.05rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .site-nav {
+    flex: 0 0 auto !important;
+    float: none !important;
+    position: static !important;
+    line-height: 1 !important;
+  }
+
+  .site-nav .trigger {
+    display: inline-flex !important;
+    gap: 8px !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+  }
+
+  .site-nav .page-link {
+    margin-left: 0 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .theme-toggle {
+    gap: 5px;
+    padding: 4px 8px;
+    font-size: 0.84rem;
+  }
+
+  .theme-toggle__icon {
+    width: 0.62rem;
+    height: 0.62rem;
   }
 
   .magazine-home,
