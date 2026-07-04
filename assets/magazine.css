@@ -197,13 +197,14 @@ html[data-theme="dark"] .theme-toggle__icon {
 
 .forge-path {
   display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 16px;
   align-items: center;
-  margin: 24px 0 4px;
-  padding: 18px;
+  margin: 14px 0 4px;
+  padding: 12px 0 16px;
   border: 1px solid var(--mag-rule);
-  border-radius: 8px;
+  border-width: 0 0 1px;
+  border-radius: 0;
   background: var(--mag-subtle);
 }
 
@@ -217,32 +218,32 @@ html[data-theme="dark"] .theme-toggle__icon {
 }
 
 .forge-path h2 {
-  margin: 0 0 10px;
+  margin: 0 0 6px;
   color: var(--mag-ink);
-  font-size: 1.28rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 650;
   letter-spacing: -0.01em;
-  line-height: 1.18;
+  line-height: 1.25;
 }
 
 .forge-path__copy > p:not(.magazine-kicker) {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   color: var(--mag-muted);
-  font-size: 0.96rem;
-  line-height: 1.55;
+  font-size: 0.88rem;
+  line-height: 1.45;
 }
 
 .forge-path__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 12px;
+  gap: 6px 12px;
   align-items: center;
 }
 
 .forge-path__actions a,
 .forge-path__actions a:visited {
   color: var(--mag-accent);
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -255,7 +256,7 @@ html[data-theme="dark"] .theme-toggle__icon {
 
 .forge-path__actions .forge-path__primary,
 .forge-path__actions .forge-path__primary:visited {
-  padding: 7px 11px;
+  padding: 5px 9px;
   border: 1px solid var(--mag-accent);
   border-radius: 999px;
   background: var(--mag-accent);
@@ -481,6 +482,40 @@ html[data-theme="dark"] .theme-toggle__icon {
   font-family: Consolas, "Liberation Mono", Menlo, monospace !important;
   font-size: 0.82rem !important;
   font-weight: 800 !important;
+}
+
+.magazine-archive__more {
+  margin: 16px 0 0 !important;
+}
+
+.magazine-archive__more a,
+.magazine-archive__more a:visited {
+  color: var(--mag-accent) !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+.magazine-archive__more a:hover {
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 3px !important;
+}
+
+.magazine-archive-page {
+  max-width: 760px !important;
+  margin: 0 auto !important;
+  padding: 10px 0 56px !important;
+  background: var(--mag-sheet) !important;
+}
+
+.magazine-archive-page h1 {
+  margin: 0 0 24px !important;
+  color: var(--mag-ink) !important;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem) !important;
+  font-weight: 750 !important;
+  letter-spacing: -0.015em !important;
+  line-height: 1.08 !important;
 }
 
 .magazine-post {
@@ -715,7 +750,8 @@ html[data-theme="dark"] .theme-toggle__icon {
   .forge-path,
   .magazine-hero__copy,
   .magazine-section,
-  .magazine-post {
+  .magazine-post,
+  .magazine-archive-page {
     padding-left: 18px !important;
     padding-right: 18px !important;
   }
@@ -728,18 +764,18 @@ html[data-theme="dark"] .theme-toggle__icon {
 
   .forge-path {
     grid-template-columns: 1fr;
-    gap: 14px;
-    margin-top: 18px;
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
+    gap: 10px;
+    margin-top: 12px;
+    padding-top: 12px !important;
+    padding-bottom: 14px !important;
   }
 
   .forge-path__image {
-    max-width: 280px;
+    max-width: 190px;
   }
 
   .forge-path h2 {
-    font-size: 1.12rem;
+    font-size: 1rem;
   }
 
   .forge-path__actions {

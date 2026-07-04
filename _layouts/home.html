@@ -16,10 +16,10 @@ layout: default
     <img class="forge-path__image" src="{{ "/images/site/agentic-ai-forge-banner.png" | relative_url }}" alt="Agentic AI Forge">
     <div class="forge-path__copy">
       <p class="magazine-kicker">Build Path</p>
-      <h2 id="forge-path-heading">The public stream is the preview. The Forge is where the build continues.</h2>
-      <p>Join the Forge for hands-on builds, architecture tradeoffs, harnesses, orchestration, scripts, and working agentic systems. Follow the Meetup for public livestreams, then catch recordings and deeper technical videos on YouTube.</p>
+      <h2 id="forge-path-heading">Follow the work from public stream to working system.</h2>
+      <p>Public livestreams preview the idea. The Forge is where the build keeps going. Recordings and deeper technical videos land on YouTube.</p>
       <div class="forge-path__actions" aria-label="Agentic AI Forge links">
-        <a class="forge-path__primary" href="https://www.skool.com/agentic-ai-forge" target="_blank" rel="noopener noreferrer">Join Agentic AI Forge</a>
+        <a class="forge-path__primary" href="https://www.skool.com/agentic-ai-forge" target="_blank" rel="noopener noreferrer">Explore the Forge</a>
         <a href="https://www.meetup.com/nycpowershellmeetup" target="_blank" rel="noopener noreferrer">Attend a public livestream</a>
         <a href="https://www.youtube.com/@dougfinke/videos" target="_blank" rel="noopener noreferrer">Watch recordings</a>
       </div>
@@ -102,12 +102,15 @@ layout: default
     </div>
 
     <ol class="magazine-archive__list">
-      {% for post in posts offset:9 %}
+      {% for post in posts offset:9 limit:10 %}
       <li>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </li>
       {% endfor %}
     </ol>
+    <p class="magazine-archive__more">
+      <a href="{{ "/archive/" | relative_url }}">View full archive</a>
+    </p>
   </section>
 </div>
