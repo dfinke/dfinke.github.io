@@ -56,8 +56,8 @@ body {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  max-width: 1180px !important;
-  gap: 48px !important;
+  max-width: 960px !important;
+  gap: 32px !important;
   padding-top: 22px !important;
   padding-bottom: 22px !important;
 }
