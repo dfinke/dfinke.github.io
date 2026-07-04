@@ -56,13 +56,15 @@ body {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  max-width: 760px !important;
+  max-width: 1180px !important;
+  gap: 48px !important;
   padding-top: 22px !important;
   padding-bottom: 22px !important;
 }
 
 .site-title,
 .site-title:visited {
+  flex: 1 1 auto !important;
   max-width: 680px !important;
   color: var(--mag-ink) !important;
   font-family: inherit !important;
@@ -90,6 +92,7 @@ body {
 .site-nav .trigger {
   display: inline-flex !important;
   align-items: center !important;
+  flex: 0 0 auto !important;
   gap: 14px !important;
   position: static !important;
   width: auto !important;
