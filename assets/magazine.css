@@ -618,6 +618,11 @@ html[data-theme="dark"] .theme-toggle__icon {
   color: inherit !important;
 }
 
+/* Rouge marks PowerShell parameters as .nt; Minima's navy assumes a light background. */
+.magazine-post__content .language-powershell .highlight .nt {
+  color: #93c5fd;
+}
+
 .magazine-post__content img {
   display: block !important;
   max-width: 100% !important;
