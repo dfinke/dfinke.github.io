@@ -25,6 +25,7 @@ twitter_username: dfinke
 github_username:  dfinke
 header_pages:
   - about.md
+  - idea-lab.md
 
 # Build settings
 markdown: kramdown
