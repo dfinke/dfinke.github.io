@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include head.html -%}
+  <body>
+    {%- include header.html -%}
+    <main id="main-content" class="page-content" aria-label="Content" tabindex="-1">
+      {% if page.layout == 'home' %}{{ content }}{% else %}<div class="wrapper reading-wrapper">{{ content }}</div>{% endif %}
+    </main>
+    {%- include footer.html -%}
+  </body>
+</html>

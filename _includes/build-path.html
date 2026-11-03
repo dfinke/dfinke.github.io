@@ -1,0 +1,21 @@
+{% assign topic = include.topic %}
+{% assign match_count = 0 %}
+{% capture topic_rows %}
+  {% for post in site.posts %}
+    {% assign searchable = post.title | append: ' ' | append: post.tags | downcase %}
+    {% assign matches = false %}
+    {% for keyword in topic.keywords %}
+      {% if searchable contains keyword %}{% assign matches = true %}{% endif %}
+    {% endfor %}
+    {% if matches %}
+      {% assign match_count = match_count | plus: 1 %}
+      {% if match_count <= 5 %}
+      <li><a href="{{ post.url | relative_url }}"><span>{{ post.title | escape }}</span><span aria-hidden="true">↗</span></a></li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+<details class="build-path panel" {% if forloop.first %}open{% endif %}>
+  <summary><span class="path-number">{{ topic.number }}</span><span class="path-title"><strong>{{ topic.title }}</strong><span>{{ topic.description }}</span></span><span class="path-count">{{ match_count }} articles</span><span class="path-chevron" aria-hidden="true">⌄</span></summary>
+  <div class="path-content"><ul>{{ topic_rows }}</ul>{% if match_count > 5 %}<p class="path-more">Showing the 5 most recent. <a href="{{ '/archive/' | relative_url }}">Browse the full archive</a>.</p>{% endif %}</div>
+</details>

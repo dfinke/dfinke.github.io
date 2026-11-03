@@ -1,0 +1,12 @@
+- number: "01"
+  title: Agent Harnesses
+  description: Tools, context, and the loop that connects them.
+  keywords: ["agent", "harness", "function calling"]
+- number: "02"
+  title: PSAISuite & AI Workflows
+  description: Connect models to the automation you already use.
+  keywords: ["psai", "ai-driven", "openai", "mcp", "chatgpt", "copilot"]
+- number: "03"
+  title: PowerShell Labs
+  description: Practical experiments in scripting and automation.
+  keywords: ["powershell"]
