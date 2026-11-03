@@ -1,7 +1,7 @@
 - number: "01"
   title: Agent Harnesses
   description: Tools, context, and the loop that connects them.
-  keywords: ["agent", "harness", "function calling"]
+  keywords: ["agent", "function calling"]
 - number: "02"
   title: PSAISuite & AI Workflows
   description: Connect models to the automation you already use.

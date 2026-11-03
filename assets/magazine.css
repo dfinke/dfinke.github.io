@@ -153,7 +153,7 @@ table th, table td { border-color: var(--mag-rule); } table th, table tr:nth-chi
  .header-inner { gap: 10px; } .site-title { font-size: 18px; }
  .brand-mark { width: 32px; height: 32px; } .brand-subtitle { font-size: 8px; }
  .forge-nav { width: 100%; justify-content: space-between; flex-basis: 100%; gap: 12px; }
- .forge-nav > a { min-height: 40px; display: inline-flex; align-items: center; }
+ .forge-nav > a:not(.nav-forge) { min-height: 40px; display: inline-flex; align-items: center; }
  .forge-hero h1 { font-size: 36px; } .hero-dek { font-size: 14px; }
  .hero-meta { flex-wrap: wrap; gap: 10px; } .hero-meta span + span { padding-left: 10px; }
  .outcomes, .featured { padding: 22px; } .outcome-list { grid-template-columns: 1fr; gap: 14px; }
