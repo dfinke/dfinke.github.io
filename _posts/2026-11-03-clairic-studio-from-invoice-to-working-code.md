@@ -29,9 +29,7 @@ The screenshot shows `INV-2291`, `Northwind Supply`, and a total of `1080`. The 
 
 ### 1. Get the standalone app
 
-<button type="button" class="button" disabled>Get the standalone app</button>
-
-<!-- Awaiting Google Drive download link before publication. -->
+<a class="button" href="https://drive.google.com/file/d/1Ugu-_GP9leR8uKKhZ6BvDUP3qkvqRA9m/view" target="_blank" rel="noopener noreferrer">Get the standalone app</a>
 
 Clairic Studio runs as a Windows x64 executable. You don’t need Go, Node.js, or PowerShell installed to run the app. It uses Microsoft Edge WebView2, which is normally present on current Windows installations.
 
