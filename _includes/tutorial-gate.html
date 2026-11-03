@@ -1,0 +1,70 @@
+
+<button type="button" class="button" id="open-tutorial">Click here for full tutorial</button>
+<noscript><p>Enable JavaScript to open the signup form and full tutorial.</p></noscript>
+<p id="gate-status" role="status" aria-live="polite"></p>
+<dialog id="tutorial-signup" aria-labelledby="signup-heading">
+  <div class="signup-heading"><h2 id="signup-heading">Get the full tutorial</h2><button type="button" id="close-signup" aria-label="Close email form">Close</button></div>
+  <iframe id="signup-frame" title="Email signup for the full tutorial" referrerpolicy="no-referrer"></iframe>
+</dialog>
+<section id="full-tutorial" hidden tabindex="-1">
+{{ include.content | markdownify }}
+</section>
+<style>
+#tutorial-signup{width:min(520px,calc(100vw - 40px));padding:16px;border:1px solid #a6b0bb;border-radius:12px;background:#fff;color:#162130;max-height:90vh}#tutorial-signup::backdrop{background:#101722b8}.signup-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.signup-heading h2{font-size:18px;margin:0}.signup-heading button{font:inherit;cursor:pointer}#signup-frame{display:block;width:100%;height:460px;border:0}#full-tutorial[hidden]{display:none!important}
+</style>
+<script>
+(() => {
+  const deploymentUrl = 'https://script.google.com/macros/s/AKfycbz9HT_CLYP_HJ_1f9y0WgtkqqguuT3Po37tC3t-SfkTPEf5KOPDyaX0qHn77S6_ttmbnKAC/exec';
+  const dialog = document.getElementById('tutorial-signup');
+  const frame = document.getElementById('signup-frame');
+  const tutorial = document.getElementById('full-tutorial');
+  const status = document.getElementById('gate-status');
+  const open = document.getElementById('open-tutorial');
+  const accessKey = 'dfinke:tutorial-access:clairic-studio:v1';
+  const accessDuration = 90 * 24 * 60 * 60 * 1000;
+  function reveal(scroll) {
+    tutorial.hidden = false;
+    open.hidden = true;
+    if (scroll) {
+      tutorial.focus();
+      tutorial.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  try {
+    const access = JSON.parse(localStorage.getItem(accessKey));
+    const now = Date.now();
+    if (access && access.version === 1 && Number.isSafeInteger(access.expiresAt) &&
+        access.expiresAt > now && access.expiresAt <= now + accessDuration) {
+      reveal(false);
+    } else {
+      localStorage.removeItem(accessKey);
+    }
+  } catch { /* Storage may be unavailable. Signup can still unlock this visit. */ }
+  let requestId = '';
+  function close() { requestId = ''; dialog.close(); frame.removeAttribute('src'); }
+  open.addEventListener('click', () => {
+    if (!deploymentUrl) { status.textContent = 'Tutorial signup is not available yet.'; return; }
+    status.textContent = '';
+    requestId = Array.from(crypto.getRandomValues(new Uint8Array(32)), b => b.toString(16).padStart(2,'0')).join('');
+    const url = new URL(deploymentUrl);
+    url.searchParams.set('parentOrigin', location.origin);
+    url.searchParams.set('requestId', requestId);
+    frame.src = url.href;
+    dialog.showModal();
+  });
+  document.getElementById('close-signup').addEventListener('click', close);
+  dialog.addEventListener('cancel', event => { event.preventDefault(); close(); });
+  window.addEventListener('message', event => {
+    if (!dialog.open || !requestId || !event.data || event.data.type !== 'dfinke-tutorial-saved' || event.data.requestId !== requestId) return;
+    let origin;
+    try { origin = new URL(event.origin); } catch { return; }
+    const googleHost = origin.hostname === 'script.googleusercontent.com' || origin.hostname.endsWith('-script.googleusercontent.com');
+    if (origin.protocol !== 'https:' || !googleHost) return;
+    close();
+    try {
+      localStorage.setItem(accessKey, JSON.stringify({ version: 1, expiresAt: Date.now() + accessDuration }));
+    } catch { /* A storage restriction must not prevent access after a successful save. */ }
+    reveal(true);
+  });
+})();
+</script>
