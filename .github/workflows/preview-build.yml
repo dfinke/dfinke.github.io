@@ -1,0 +1,29 @@
+name: Validate site redesign
+on:
+  pull_request:
+    branches: ["master"]
+    paths:
+      - "_layouts/**"
+      - "_includes/**"
+      - "_data/**"
+      - "assets/**"
+      - "_config.yml"
+      - ".github/workflows/preview-build.yml"
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Save reviewable site
+        uses: actions/upload-artifact@v4
+        with:
+          name: redesigned-site
+          path: _site
+          retention-days: 7

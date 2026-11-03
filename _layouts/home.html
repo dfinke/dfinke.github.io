@@ -1,116 +1,72 @@
 ---
 layout: default
 ---
+{% assign featured = site.posts.first %}
+<section class="forge-hero" aria-labelledby="home-title">
+  <div class="wrapper">
+    <p class="eyebrow"><span class="status-dot"></span> Practical agentic engineering</p>
+    <h1 id="home-title">Build agents like systems,<br>not demos.</h1>
+    <p class="hero-dek">Notes from the workshop on harnesses, orchestration, and working AI systems. PowerShell is my lab because it gets out of the way.</p>
+    <div class="hero-meta"><span>By Doug Finke</span><span>Author &amp; automation builder</span></div>
+  </div>
+</section>
 
-{% assign posts = site.posts %}
-{% assign featured = posts.first %}
+<div class="wrapper forge-layout">
+  <div class="forge-main">
+    <section class="outcomes panel" aria-labelledby="outcomes-heading">
+      <p class="eyebrow">From idea to implementation</p>
+      <h2 id="outcomes-heading">What will you build next?</h2>
+      <ul class="outcome-list">
+        <li>Give agents useful, focused tools</li>
+        <li>Design inspectable agent harnesses</li>
+        <li>Connect AI to PowerShell workflows</li>
+        <li>Evaluate models on real work</li>
+      </ul>
+    </section>
 
-<div class="magazine-home">
-  <section class="magazine-masthead" aria-label="Site introduction">
-    <p class="magazine-kicker">Agentic AI Forge</p>
-    <h1>Build agents like systems, not demos.</h1>
-    <p>Practical notes on software factories, harnesses, orchestration, and working AI systems. PowerShell is my lab because it gets out of the way.</p>
-  </section>
+    {% if featured %}
+    <section class="featured panel" aria-labelledby="featured-heading">
+      <div class="section-label"><span class="eyebrow">Start here</span><span class="badge">Featured article</span></div>
+      <h2 id="featured-heading"><a href="{{ featured.url | relative_url }}">{{ featured.title | escape }}</a></h2>
+      <p>{{ featured.description | default: featured.excerpt | strip_html | strip_newlines | truncate: 220 }}</p>
+      <div class="article-bottom"><time datetime="{{ featured.date | date_to_xmlschema }}">{{ featured.date | date: "%b %-d, %Y" }}</time><a class="text-link" href="{{ featured.url | relative_url }}">Read the article <span aria-hidden="true">↗</span></a></div>
+    </section>
+    {% endif %}
 
-  <section class="forge-path" aria-labelledby="forge-path-heading">
-    <img class="forge-path__image" src="{{ "/images/site/agentic-ai-forge-banner.png" | relative_url }}" alt="Agentic AI Forge">
-    <div class="forge-path__copy">
-      <p class="magazine-kicker">Build Path</p>
-      <h2 id="forge-path-heading">Follow the work from public stream to working system.</h2>
-      <p>Public livestreams preview the idea. The Forge is where the build keeps going. Recordings and deeper technical videos land on YouTube.</p>
-      <div class="forge-path__actions" aria-label="Agentic AI Forge links">
-        <a class="forge-path__primary" href="https://www.skool.com/agentic-ai-forge" target="_blank" rel="noopener noreferrer">Explore the Forge</a>
-        <a href="https://www.meetup.com/nycpowershellmeetup" target="_blank" rel="noopener noreferrer">Attend a public livestream</a>
-        <a href="https://www.youtube.com/@dougfinke/videos" target="_blank" rel="noopener noreferrer">Watch recordings</a>
+    <section id="topics" class="topic-section" aria-labelledby="topics-heading">
+      <div class="section-heading"><div><p class="eyebrow">Explore the work</p><h2 id="topics-heading">Choose a build path</h2></div><span class="quiet">3 topic collections</span></div>
+      <p class="section-intro">Follow a topic through practical articles and experiments.</p>
+      {% for topic in site.data.build_paths %}
+        {% include build-path.html topic=topic %}
+      {% endfor %}
+    </section>
+
+    <section id="latest" class="latest-section" aria-labelledby="latest-heading">
+      <div class="section-heading"><div><p class="eyebrow">From the notebook</p><h2 id="latest-heading">Latest articles</h2></div><a class="text-link" href="{{ '/archive/' | relative_url }}">Full archive <span aria-hidden="true">↗</span></a></div>
+      <div class="article-list">
+        {% for post in site.posts offset:1 limit:5 %}
+        <article class="article-row">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          <div><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3><p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 145 }}</p></div>
+          <span class="row-arrow" aria-hidden="true">↗</span>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+
+  <aside class="forge-sidebar" aria-label="Continue building">
+    <div class="community-card panel">
+      <img src="{{ '/images/site/agentic-ai-forge-banner.png' | relative_url }}" alt="Agentic AI Forge — AI automation, code generation, the AI workshop" width="1408" height="768">
+      <div class="community-body">
+        <p class="eyebrow">The workshop continues</p>
+        <h2>Agentic AI Forge</h2>
+        <p>Go deeper with a community of builders working on practical AI systems.</p>
+        <a class="button button-primary" href="https://www.skool.com/agentic-ai-forge" target="_blank" rel="noopener noreferrer">Explore the Forge <span aria-hidden="true">↗</span></a>
+        <ul class="community-benefits"><li>Agent harnesses &amp; orchestration</li><li>Software factories &amp; automation</li><li>Hands-on AI engineering</li></ul>
+        <div class="community-links"><a href="https://www.meetup.com/nycpowershellmeetup" target="_blank" rel="noopener noreferrer">Attend a public livestream <span aria-hidden="true">↗</span></a><a href="https://www.youtube.com/@dougfinke/videos" target="_blank" rel="noopener noreferrer">Watch recordings <span aria-hidden="true">↗</span></a></div>
       </div>
     </div>
-  </section>
-
-  {% if featured %}
-  <section class="magazine-hero" aria-label="Featured article">
-    <div class="magazine-hero__copy">
-      <p class="magazine-kicker">Featured</p>
-      <h1 class="magazine-hero__title">
-        <a href="{{ featured.url | relative_url }}">{{ featured.title | escape }}</a>
-      </h1>
-      <p class="magazine-meta">
-        <time datetime="{{ featured.date | date_to_xmlschema }}">{{ featured.date | date: "%b %-d, %Y" }}</time>
-        {% if featured.categories.size > 0 %}
-        <span>{{ featured.categories | join: " / " }}</span>
-        {% endif %}
-      </p>
-      <p class="magazine-hero__excerpt">
-        {% if featured.description %}
-          {{ featured.description | strip_html | strip_newlines }}
-        {% else %}
-          {{ featured.excerpt | strip_html | strip_newlines | truncate: 240 }}
-        {% endif %}
-      </p>
-      <a class="magazine-read-more" href="{{ featured.url | relative_url }}">Read the featured article</a>
-    </div>
-    <a class="magazine-hero__media" href="{{ featured.url | relative_url }}" aria-label="{{ featured.title | escape }}">
-      {% if featured.image %}
-      <img src="{{ featured.image | relative_url }}" alt="{{ featured.title | escape }}">
-      {% else %}
-      <div class="magazine-hero__placeholder">
-        <span>{{ featured.categories.first | default: "PowerShell" }}</span>
-      </div>
-      {% endif %}
-    </a>
-  </section>
-  {% endif %}
-
-  <section class="magazine-section" aria-labelledby="recent-posts">
-    <div class="magazine-section__heading">
-      <p class="magazine-kicker">Latest</p>
-      <h2 id="recent-posts">Recent Articles</h2>
-    </div>
-
-    <div class="magazine-grid">
-      {% for post in posts offset:1 limit:8 %}
-      <article class="magazine-card">
-        {% if post.image %}
-        <a class="magazine-card__media" href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }}">
-          <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}">
-        </a>
-        {% endif %}
-        <div class="magazine-card__body">
-          <p class="magazine-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-            {% if post.categories.size > 0 %}
-            <span>{{ post.categories.first }}</span>
-            {% endif %}
-          </p>
-          <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
-          <p>
-            {% if post.description %}
-              {{ post.description | strip_html | strip_newlines | truncate: 150 }}
-            {% else %}
-              {{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}
-            {% endif %}
-          </p>
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="magazine-section magazine-archive" aria-labelledby="archive-posts">
-    <div class="magazine-section__heading">
-      <p class="magazine-kicker">Archive</p>
-      <h2 id="archive-posts">More From The Blog</h2>
-    </div>
-
-    <ol class="magazine-archive__list">
-      {% for post in posts offset:9 limit:10 %}
-      <li>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
-        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </li>
-      {% endfor %}
-    </ol>
-    <p class="magazine-archive__more">
-      <a href="{{ "/archive/" | relative_url }}">View full archive</a>
-    </p>
-  </section>
+    <div class="author-note"><span class="author-monogram" aria-hidden="true">df</span><div><strong>A note from Doug</strong><p>Researching the optimal;<br>implementing the practical.</p><a class="text-link" href="{{ '/about/' | relative_url }}">More about me <span aria-hidden="true">↗</span></a></div></div>
+  </aside>
 </div>
