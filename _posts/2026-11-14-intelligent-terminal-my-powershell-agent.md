@@ -5,7 +5,10 @@ date: 2026-11-14 00:01:00 -0500
 categories: powershell ai agents
 tags: [PowerShell, AI, Intelligent Terminal, ACP, Agents]
 description: "A custom PowerShell agent, live objects, and a script you can take beyond the conversation."
+image: /images/posts/intelligent-terminal-powershell-agent.jpg
 ---
+
+[![Intelligent Terminal: My Own AI Agent]({{ '/images/posts/intelligent-terminal-powershell-agent.jpg' | relative_url }})](https://youtu.be/Q3ht7qWZQ8M)
 
 What happens when you connect your own PowerShell agent to Microsoft's Intelligent Terminal?
 
