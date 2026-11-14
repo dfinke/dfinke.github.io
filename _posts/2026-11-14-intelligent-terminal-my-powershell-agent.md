@@ -14,7 +14,7 @@ What happens when you connect your own PowerShell agent to Microsoft's Intellige
 
 I built one to find out. In this short demo, I ask it to explore running processes, work with the results in a follow-up, and save the idea as a script I can run in another PowerShell console.
 
-**[Watch the short demonstration](https://youtu.be/Q3ht7qWZQ8M)**
+🎦 **[Watch the short demonstration](https://youtu.be/Q3ht7qWZQ8M)**
 
 ## A terminal that can talk to agents
 
@@ -36,6 +36,6 @@ That's the part I find interesting: the conversation is a place to explore, but 
 
 I'll be demonstrating Intelligent Terminal and my PowerShell agent on **Wednesday, November 18, 2026 at 6:00 PM Eastern**. We'll look at the object workflow, save and run a script, and explore a couple of other Intelligent Terminal features.
 
-[Join the Meetup: Microsoft's Intelligent Terminal: Meet My PowerShell Agent](https://www.meetup.com/nycpowershellmeetup/events/317432717)
+🔗 [Join the Meetup: Microsoft's Intelligent Terminal: Meet My PowerShell Agent](https://www.meetup.com/nycpowershellmeetup/events/317432717)
 
 
