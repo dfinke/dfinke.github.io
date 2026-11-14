@@ -38,4 +38,4 @@ I'll be demonstrating Intelligent Terminal and my PowerShell agent on **Wednesda
 
 [Join the Meetup: Microsoft's Intelligent Terminal: Meet My PowerShell Agent](https://www.meetup.com/nycpowershellmeetup/events/317432717)
 
-For now, this is a look at the experience. I may dig into how I built the agent in a future post or stream.
+
